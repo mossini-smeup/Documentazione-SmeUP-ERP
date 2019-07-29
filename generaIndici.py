@@ -233,8 +233,17 @@ def main():
         filename = '_sidebar.md'
     
     if 'DOC_SCH\\Applicazioni' in os.path.join(dir_input, filename):
-        print(os.path.join(dir_input, filename))
-        output = open(os.path.join(dir_input, filename), 'a+', encoding='utf8')
+        for key in areeApp:
+            if key + '\_sidebar' in os.path.join(dir_input, filename):
+                output = open(os.path.join(dir_input, filename), 'w+', encoding='utf8')
+            else:
+                output = open(os.path.join(dir_input, filename), 'a+', encoding='utf8')
+                print(os.path.join(dir_input, filename))
+        '''for key in applicazioni:
+            if key in os.path.join(dir_input, filename):
+                print(os.path.join(dir_input, filename))
+                output = open(os.path.join(dir_input, filename), 'a+', encoding='utf8')
+        '''
     else:
         output = open(os.path.join(dir_input, filename), 'w+', encoding='utf8')
 
