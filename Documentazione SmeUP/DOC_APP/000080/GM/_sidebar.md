@@ -1,0 +1,11 @@
+# Magazzino
+- [Foto e Analisi inventari](Sorgenti/MB/DOC/GMANIN.md)
+- [Ware_UP Funzioni comuni](Sorgenti/MB/DOC/GMBASE.md)
+- [Colli](Sorgenti/MB/DOC/GMCOLL.md)
+- [Attività fiscali](Sorgenti/MB/DOC/GMFISC.md)
+- [Giacenze](Sorgenti/MB/DOC/GMGIAC.md)
+- [Inventario fisico](Sorgenti/MB/DOC/GMINVE.md)
+- [Movimenti](Sorgenti/MB/DOC/GMMOVI.md)
+- [Richieste di movimentazione](Sorgenti/MB/DOC/GMRIMO.md)
+- [Rintracciabilità](Sorgenti/MB/DOC/GMRINT.md)
+- [Ubicazioni](Sorgenti/MB/DOC/GMUBIC.md)

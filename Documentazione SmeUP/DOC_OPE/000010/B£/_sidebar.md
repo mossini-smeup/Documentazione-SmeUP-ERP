@@ -1,0 +1,10 @@
+# Funzioni Base
+- [Autorizzazioni applicative](Sorgenti/MB/DOC_OPE/B£AUTO.md)
+- [Funzioni comuni](Sorgenti/MB/DOC_OPE/B£BASE.md)
+- [Calendario](Sorgenti/MB/DOC_OPE/B£CALE.md)
+- [Documentazione](Sorgenti/MB/DOC_OPE/B£DOCU.md)
+- [Menù Sme.UP](Sorgenti/MB/DOC_OPE/B£MENU.md)
+- [Memorizzazioni](Sorgenti/MB/DOC_OPE/B£MUTE.md)
+- [Note Strutturate](Sorgenti/MB/DOC_OPE/B£NOTE.md)
+- [Tabelle](Sorgenti/MB/DOC_OPE/B£TABE.md)
+- [Utility](Sorgenti/MB/DOC_OPE/B£UTIL.md)

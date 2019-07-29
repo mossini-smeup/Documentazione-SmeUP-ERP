@@ -1,0 +1,11 @@
+- [Pipeline](Sorgenti/MB/DOC/REREPO_01)
+- [Account attivi](Sorgenti/MB/DOC/REREPO_02)
+- [Dimensione mercato disponibile](Sorgenti/MB/DOC/REREPO_03)
+- [ROI Campagne](Sorgenti/MB/DOC/REREPO_04)
+- [Churn rate](Sorgenti/MB/DOC/REREPO_05)
+- [Customer satisfaction](Sorgenti/MB/DOC/REREPO_06)
+- [Dati geografici](Sorgenti/MB/DOC/REREPO_07)
+- [Tassi produttività forza vendita](Sorgenti/MB/DOC/REREPO_08)
+- [Key Performance Indicator](Sorgenti/MB/DOC/REREPO_09)
+- [Analisi bilanci account](Sorgenti/MB/DOC/REREPO_10)
+

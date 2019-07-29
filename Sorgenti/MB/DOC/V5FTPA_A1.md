@@ -1,0 +1,12 @@
+## Installazione
+- [Installazione Fattura elettronica Sme.UP ERP](Sorgenti/MB/DOC/V5FTPA_02)
+- [Installazione in ambiente Star](Sorgenti/MB/DOC/V5FTPA_03)
+- [Personalizzazione](Sorgenti/MB/DOC/V5FTPA_05)
+- [Inclusione allegati nell&-x27;XML](Sorgenti/MB/DOC/V5FTPA_06)
+- [Impostazione invio fatture](Sorgenti/MB/DOC/V5FTPA_60)
+- [Impostazione esito fatture](Sorgenti/MB/DOC/V5FTPA_70)
+- [Schedulazione aggiornamento esito fatture](Sorgenti/MB/DOC/V5FTPA_73)
+- [Gestione mancata consegna](Sorgenti/MB/DOC/V5FTPA_74)
+- [Fatturazione Elettronica NO SMEUP](Sorgenti/MB/DOC/V5FTPA_11)
+- [Note su Webservice Abletech](Sorgenti/MB/DOC/V5FTPA_AB)
+- [Checklist di installazione](Sorgenti/MB/DOC/V5FTPA_63)

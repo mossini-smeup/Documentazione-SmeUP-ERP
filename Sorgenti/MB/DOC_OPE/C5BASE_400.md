@@ -1,0 +1,5 @@
+La definizione di un calendario è necessaria per definire le rate di pagamento, ovvero per identificare i giorni e le date in cui è possibile pagare i fornitori o ricevere pagamenti. Insieme al codice del pagamento, infatti, il calendario determina la scadenza delle rate.
+Utilizzando la tecnica della risalita, è necessario impostare un calendario standard per tutti gli enti e introdurre la singola specificità a livello di singolo codice solo dove diverso da tutti gli altri.
+Se un determinato tipo di pagamento determina una rata che ha scadenza in un giorno di chiusura, il pagamento slitta in avanti fino alla prima data di apertura.
+È possibile definire un calendario aziendale, un calendario fornitori, un calendario clienti, un calendario per uno specifico codice di pagamento e un calendario per uno specifico tipo di pagamento.
+Per il calcolo delle scadenze vengono sempre presi in considerazione tutti i calendari attivati, perciò una scadenza di pagamento sarà valida solo se lo è per tutti i calendari.

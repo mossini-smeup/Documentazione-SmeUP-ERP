@@ -1,0 +1,7 @@
+- [Estrazione di massa documenti](Sorgenti/MB/DOC_OGG/P_V5EM01)
+- [Estrazione R.M. da documenti V5](Sorgenti/MB/DOC_OGG/P_V5RM01)
+- [Stampa DDT](Sorgenti/MB/DOC_OGG/P_V5BO01)
+- [Collegamento documenti](Sorgenti/MB/DOC_OGG/P_V5GM01)
+- [Gestione packing list](Sorgenti/MB/DOC_OGG/P_GMPK01)
+- [Analisi evadibilità estesa](Sorgenti/MB/DOC_OGG/P_V5SP10)
+- [Test analisi evadibilità](Sorgenti/MB/DOC_OGG/P_V5FUEVA)

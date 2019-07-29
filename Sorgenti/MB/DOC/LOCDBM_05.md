@@ -1,0 +1,2 @@
+# Problematiche note
+DA COMPLETARE

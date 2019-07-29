@@ -1,0 +1,7 @@
+- [Struttura indice](Sorgenti/MB/DOC_OGG/P_CQVR60)
+- [Gestione indici statici](Sorgenti/MB/DOC_OGG/P_CQVR70)
+- [Controllo valutazioni](Sorgenti/MB/DOC_OGG/P_CQVR80)
+- [Interrogazione rating](Sorgenti/MB/DOC_OGG/P_CQVR64)
+- [Stampa prospetto rating](Sorgenti/MB/DOC_OGG/P_CQVR68)
+- [Calcolo indici dinamici](Sorgenti/MB/DOC_OGG/P_IGIND0)
+- [Storicizzazione rating](Sorgenti/MB/DOC_OGG/P_CQVR65)

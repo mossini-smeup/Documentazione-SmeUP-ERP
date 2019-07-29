@@ -1,0 +1,1 @@
+- [Esecuzione funzioni Batch](Sorgenti/MB/DOC/LOCBAS_BCP)

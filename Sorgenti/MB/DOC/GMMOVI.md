@@ -1,0 +1,18 @@
+## Documenti applicativi
+- [Movimenti](Sorgenti/MB/DOC/GMMOVI_INT)
+## Note tecnico/applicative
+- [Modalità trattamento recuperi di produzione](Sorgenti/MB/DOC/GMMOVI_N1)
+- [Regole costruzione causali magazzino](Sorgenti/MB/DOC/GMMOVI_N2)
+- [Revisione movimenti di magazzino](Sorgenti/MB/DOC/GMMOVI_N3)
+- [Trattamento U.M. alternativa](Sorgenti/MB/DOC/GMMOVI_N4)
+- [Struttura N. documenti](Sorgenti/MB/DOC/V5DOCU_N2)
+- [Programmi collegamento GM - P5](Sorgenti/MB/DOC/GMMOVI_N5)
+- [Struttura movimenti magazzino da documenti](Sorgenti/MB/DOC/GMMOVI_N6)
+- [Movimenti collegati a Ordini-Doc&-x2f;Lavorazione](Sorgenti/MB/DOC/GMMOVI_N7)
+- [Collegamento P5 &-x3e; V5](Sorgenti/MB/DOC/GMMOVI_N8)
+- [Modalità divers. causali maga su oggetto&-x2f;fase](Sorgenti/MB/DOC/GMMOVI_N9)
+- [Modalità di movimentazione con lotto](Sorgenti/MB/DOC/GMMOVI_N10)
+- [Struttura legami movimenti derivati](Sorgenti/MB/DOC/GMMOVI_N11)
+- [Modalità trattamento recuperi di produzione](Sorgenti/MB/DOC/GMMOVI_N12)
+- [Struttura conto lavoro pieno](Sorgenti/MB/DOC/P5IMPE_N5)
+- [Attribuzione modalità di scarico impegni materiali](Sorgenti/MB/DOC/P5IMPE_N10)

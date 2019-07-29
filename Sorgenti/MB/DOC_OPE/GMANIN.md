@@ -1,0 +1,2 @@
+- [Creazione foto giacenza](Sorgenti/MB/DOC_OGG/P_GMFO01)
+- [Scheda Foto e Analisi Inventari](Sorgenti/MB/DOC_SCH/GMANIN)

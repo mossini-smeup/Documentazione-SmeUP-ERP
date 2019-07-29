@@ -1,0 +1,2 @@
+- [Singolo evento](Sorgenti/MB/DOC/PHRETE_S01)
+- [Attivazione batch (test di massa](Sorgenti/MB/DOC/PHRETE_S02)

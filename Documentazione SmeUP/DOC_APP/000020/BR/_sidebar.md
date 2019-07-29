@@ -1,0 +1,13 @@
+# Dati di Base
+- [Dati Ente&#x2f;Articolo](Sorgenti/MB/DOC/BRARES.md)
+- [Articoli](Sorgenti/MB/DOC/BRARTI.md)
+- [Cambi Valutari](Sorgenti/MB/DOC/BRCAMB.md)
+- [Catalogo](Sorgenti/MB/DOC/BRCATA.md)
+- [Cicli](Sorgenti/MB/DOC/BRCICL.md)
+- [Commesse](Sorgenti/MB/DOC/BRCOMM.md)
+- [Configurazione](Sorgenti/MB/DOC/BRCONF.md)
+- [Dichiarazione d'intento](Sorgenti/MB/DOC/BRDINT.md)
+- [Distinta Base](Sorgenti/MB/DOC/BRDIST.md)
+- [Enti](Sorgenti/MB/DOC/BRENTI.md)
+- [Integrazione PDM](Sorgenti/MB/DOC/BRIPDM.md)
+- [Funzioni di una fase e Risorse prod.secondarie](Sorgenti/MB/DOC/BRRIPS.md)

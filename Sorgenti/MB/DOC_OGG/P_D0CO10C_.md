@@ -1,0 +1,2 @@
+* Situazioni gestibili nella Exit
+

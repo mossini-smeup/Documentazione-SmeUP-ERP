@@ -1,0 +1,11 @@
+# Magazzino
+- [Analisi Inventari](Sorgenti/MB/DOC_OPE/GMANIN.md)
+- [Funzioni Comuni](Sorgenti/MB/DOC_OPE/GMBASE.md)
+- [Colli - Contenitori](Sorgenti/MB/DOC_OPE/GMCOLL.md)
+- [Attività fiscali](Sorgenti/MB/DOC_OPE/GMFISC.md)
+- [Giacenze](Sorgenti/MB/DOC_OPE/GMGIAC.md)
+- [Inventario fisico](Sorgenti/MB/DOC_OPE/GMINVE.md)
+- [Movimenti](Sorgenti/MB/DOC_OPE/GMMOVI.md)
+- [Richieste di Movimentazione](Sorgenti/MB/DOC_OPE/GMRIMO.md)
+- [Rintracciabilità](Sorgenti/MB/DOC_OPE/GMRINT.md)
+- [Ubicazioni](Sorgenti/MB/DOC_OPE/GMUBIC.md)

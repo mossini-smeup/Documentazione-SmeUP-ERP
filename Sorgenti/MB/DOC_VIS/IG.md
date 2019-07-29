@@ -1,0 +1,1 @@
+- [Visione Rate.up](Sorgenti/MB/DOC_VIS/IG_001)

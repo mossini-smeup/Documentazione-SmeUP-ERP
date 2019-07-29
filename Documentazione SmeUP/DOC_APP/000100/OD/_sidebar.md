@@ -1,0 +1,10 @@
+# Documentale
+- [Cosa intendiamo per documentale](Sorgenti/MB/DOC/ODBASE.md)
+- [Modulo capture](Sorgenti/MB/DOC/ODCAPT.md)
+- [Interfaccia Archiviazione Archibox](Sorgenti/MB/DOC/ODIAAB.md)
+- [Interfaccia documentale Content Manager](Sorgenti/MB/DOC/ODIACM.md)
+- [Interfaccia documentale Comped](Sorgenti/MB/DOC/ODIACO.md)
+- [Interfaccia documentale EDOK](Sorgenti/MB/DOC/ODIAED.md)
+- [Interfaccia Archiviazione Medusa](Sorgenti/MB/DOC/ODIAME.md)
+- [Interfaccia IMAP](Sorgenti/MB/DOC/ODMAIL.md)
+- [Multifunzione](Sorgenti/MB/DOC/ODMFUN.md)

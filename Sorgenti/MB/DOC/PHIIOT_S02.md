@@ -1,0 +1,5 @@
+## CASO KEPWARE
+
+Script di esempio SCP_SET/LOA37_PH10.
+
+ :  : I.INC.MBR Fil(SCP_SET) Mem(LOA37_PH10)

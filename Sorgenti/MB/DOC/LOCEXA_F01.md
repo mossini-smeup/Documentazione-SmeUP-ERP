@@ -1,0 +1,3 @@
+# Tipi di grafico
+
+Il componente grafico permette di scegliere tra diverse modalita' di visualizzazione, quali grafici a barre, ad area, torta, etc...

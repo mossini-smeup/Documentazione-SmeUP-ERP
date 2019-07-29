@@ -1,0 +1,3 @@
+- [Visione Plan.up](Sorgenti/MB/DOC_VIS/MP_001)
+- [MPS&-x3a; best practices](Sorgenti/MB/DOC_VIS/MP_002)
+- [Metodo Holt Winters x le previsioni](Sorgenti/MB/DOC_VIS/MPHW_01)

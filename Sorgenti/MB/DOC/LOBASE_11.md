@@ -1,0 +1,2 @@
+- [Variabili lato client](Sorgenti/MB/DOC/LOBASE_11A)
+- [Variabili lato server](Sorgenti/MB/DOC/LOBASE_11B)

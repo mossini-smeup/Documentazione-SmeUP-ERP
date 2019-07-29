@@ -1,0 +1,2 @@
+  ## Off-line
+Sincronizzazione bidirezionale

@@ -1,0 +1,5 @@
+- [Modi di reperimento](Sorgenti/MB/DOC_OPE/B£DOCU_005)
+- [Esempi di reperimento](Sorgenti/MB/DOC_OPE/B£DOCU_008)
+ :  : DEC T(MB) P(DOC_OPE) K(B£DOCU_60)
+- [Convenzioni Documentazione attiva](Sorgenti/MB/DOC_OPE/B£DOCU50OL)
+- [Come trovare la documentazione](Sorgenti/MB/DOC_OPE/B£DOCU_80)

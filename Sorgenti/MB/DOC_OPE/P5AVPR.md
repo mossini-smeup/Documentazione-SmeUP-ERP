@@ -1,0 +1,5 @@
+- [Interr.&-x2f;Revisione Movimenti](Sorgenti/MB/DOC_OGG/P_GMMO01)
+- [Stampa movimenti](Sorgenti/MB/DOC_OGG/P_GMMO02)
+- [Dichiarazione attività per causale](Sorgenti/MB/DOC_OGG/P_P5AT10)
+- [Interr.&-x2f;Revisione Attività](Sorgenti/MB/DOC_OGG/P_P5AT01)
+- [Lista lavori per risorsa](Sorgenti/MB/DOC_OGG/P_P5WL10)

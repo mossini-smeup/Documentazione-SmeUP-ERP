@@ -1,0 +1,4 @@
+- [Gestione Articoli](Sorgenti/MB/DOC_OGG/P_BRAR01)
+- [Gestione Risalite](Sorgenti/MB/DOC_OGG/P_B£GRI2)
+- [Gestione dati Magazzino&-x2f;Articolo](Sorgenti/MB/DOC_OGG/P_GMARMG)
+- [Parametri Logistici Articolo](Sorgenti/MB/DOC_OGG/P_P5SI01)

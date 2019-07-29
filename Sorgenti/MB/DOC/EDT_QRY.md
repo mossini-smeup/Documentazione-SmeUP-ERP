@@ -1,0 +1,2 @@
+DA FARE
+ :  : DEC T(MB) P(DOC) K(EDT_QRY_A)

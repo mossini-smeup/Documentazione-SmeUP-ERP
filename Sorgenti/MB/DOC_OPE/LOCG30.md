@@ -1,0 +1,6 @@
+- [Introduzione](Sorgenti/MB/DOC/LOCG30_A)
+- [Manuale](Sorgenti/MB/DOC/LOCG30_B)
+- [Limitazioni](Sorgenti/MB/DOC/LOCG30_LIM)
+ :  : DEC T(MB) P(DOC_SVI) K(LOCG30_PTF)
+- [Costruzione XML](Sorgenti/MB/DOC/LOCG30_T01)
+- [Scheda Help Wizard Script](Sorgenti/MB/DOC_SCH/LOCG30_H)

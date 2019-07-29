@@ -1,0 +1,6 @@
+# Scarico impegni di lavorazione
+Quando si collega a magazzino (V5COL0) una riga di lavorazione (esiste V5L nella V5B) si devono scaricare gli impegni (se impostata la causale in P5I), esistono 2 possibilità : 
+ - se non è specificato niente in V5L,vengono scaricati gli impegni del documeno originale, se blank non viene eseguito lo scarico. Quindi bisogna prestare attenzione :  non inserire una bolla non a fronte di ordine con un tipo riga che collega una V5L di scarico ordine, in questo modo non scaricherebbe gli impegni;
+ - se specificato in V5L, si scaricano gli impegni del documento in esame, questo può servire a 2 scopi a seconda di come è stata impostata la P5I collegata : 
+ -- se la bolla ha generato gli impegni, questi si scaricano al collegamento :  rimangono vivi solo nel periodo tra creazione e integrazione; questo può servire ad esempio nel C/Lavoro per impegnare, all'atto della spedizione, i materiali di C/Lavoro che non sono disponibili per una successiva evasione (non si impegnano all'atto dell'ordine perchè ci potrebbero essere variazioni di data, di qtà, ecc.. e comunque sono, a quel livello, solo delle intenzioni)
+ -- se, nella P5I, non si fanno costruire gli impegni, ma si scaricano all'atto del versamento dell'assieme. Si imposta questo caso per ricevere in C/Lavoro senza ordine e senza construzione impegni.

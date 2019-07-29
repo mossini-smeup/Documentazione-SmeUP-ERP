@@ -1,0 +1,5 @@
+- [Creazione R. M. da Impegni P5](Sorgenti/MB/DOC_OGG/P_P5RM01)
+- [Estrazione R.M. da documenti V5](Sorgenti/MB/DOC_OGG/P_V5RM01)
+- [Gestione Richieste Movimentazione](Sorgenti/MB/DOC_OGG/P_GMRM01)
+- [Righe Richieste Movimentazione](Sorgenti/MB/DOC_OGG/P_GMRM10)
+- [Stampa richieste di movimentazione](Sorgenti/MB/DOC_OGG/P_GMRM51)

@@ -1,0 +1,20 @@
+## Documenti applicativi
+
+## Note tecniche applicative
+- [Modo di dichiarare prelievi alternativi](Sorgenti/MB/DOC/P5IMPE_N1)
+- [Struttura Prelievi&-x2f;Versamenti di produzione](Sorgenti/MB/DOC/P5IMPE_N2)
+- [Scarico impegni di lavorazione](Sorgenti/MB/DOC/P5IMPE_N3)
+- [Struttura Ricostruzione impegni materiali P5&-x2f;V5](Sorgenti/MB/DOC/P5IMPE_N4)
+- [Struttura conto lavoro pieno](Sorgenti/MB/DOC/P5IMPE_N5)
+- [Codifica tipo origine in impegni](Sorgenti/MB/DOC/P5IMPE_N6)
+- [Nota sugli impegni del C&-x2f;L di fase](Sorgenti/MB/DOC/P5IMPE_N7)
+- [Struttura impegni di produzione](Sorgenti/MB/DOC/P5IMPE_N8)
+- [Datazione impegni](Sorgenti/MB/DOC/P5IMPE_N9)
+- [Attribuzione modalità di scarico impegni materiali](Sorgenti/MB/DOC/P5IMPE_N10)
+- [Costruzione impegni materiali su documento](Sorgenti/MB/DOC/P5IMPE_N11)
+- [Modo di dichiarare prelievi alternativi](Sorgenti/MB/DOC/P5IMPE_N12)
+- [Movimenti collegati a Ordini-Doc&-x2f;Lavorazione](Sorgenti/MB/DOC/GMMOVI_N7)
+- [Collegamento P5 &-x3e; V5](Sorgenti/MB/DOC/GMMOVI_N8)
+- [Modalità divers. causali maga su oggetto&-x2f;fase](Sorgenti/MB/DOC/GMMOVI_N9)
+- [Struttura legami movimenti derivati](Sorgenti/MB/DOC/GMMOVI_N11)
+- [Modalità trattamento recuperi di produzione](Sorgenti/MB/DOC/GMMOVI_N12)

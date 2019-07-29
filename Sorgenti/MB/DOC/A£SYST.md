@@ -1,0 +1,1 @@
+Obiettivo di questo modulo è contenere tutte le informazioni che riguardano gli aspetti sistemistici della rete informativa. Quindi si può trovare il questionario che individua le capacità sistemistiche, così come della documentazione sistemistica che deve essere distribuita con Smeaup.

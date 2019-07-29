@@ -1,0 +1,5 @@
+- [Visione configuratore](Sorgenti/MB/DOC/CFBASE_DES)
+- [Architettura del questionario](Sorgenti/MB/DOC/CFBASE_ARC)
+- [Introduzione al configuratore](Sorgenti/MB/DOC/CFBASE_INT)
+- [Prerequisiti](Sorgenti/MB/DOC/CFBASE_PRE)
+- [Manuale tecnico configuratore](Sorgenti/MB/DOC/CFBASE_TEC)

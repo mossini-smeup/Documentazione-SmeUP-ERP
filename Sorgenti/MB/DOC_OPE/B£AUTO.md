@@ -1,0 +1,2 @@
+- [Gestione Autorizzazioni Applicative](Sorgenti/MB/DOC_OGG/P_B£AUA0)
+- [Scheda Autorizzazioni applicative](Sorgenti/MB/DOC_SCH/B£AUTO)

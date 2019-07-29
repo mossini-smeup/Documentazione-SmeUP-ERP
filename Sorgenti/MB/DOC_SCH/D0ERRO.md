@@ -1,0 +1,3 @@
+# Scheda errori calcolo costi
+Dato un contesto, un periodo ed un tipo costo, con questa scheda si possono vedere gli errori intercettati dal calcolo, è possibile limitare l'analisi ai soli articoli con giacenza oppure vedere gli errori di tutti i tipi oggetto
+![D0BASE_66](http://localhost:3000/immagini/MBDOC_SCH-D0ERRO/D0BASE_66.png)![D0BASE_67](http://localhost:3000/immagini/MBDOC_SCH-D0ERRO/D0BASE_67.png)

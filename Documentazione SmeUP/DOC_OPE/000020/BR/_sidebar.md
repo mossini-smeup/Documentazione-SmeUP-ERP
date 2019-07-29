@@ -1,0 +1,10 @@
+# Dati di Base
+- [Articoli](Sorgenti/MB/DOC_OPE/BRARTI.md)
+- [Cambi](Sorgenti/MB/DOC_OPE/BRCAMB.md)
+- [Cicli](Sorgenti/MB/DOC_OPE/BRCICL.md)
+- [Commesse](Sorgenti/MB/DOC_OPE/BRCOMM.md)
+- [Dichiarazioni d&#x27;intento](Sorgenti/MB/DOC_OPE/BRDINT.md)
+- [Distinta](Sorgenti/MB/DOC_OPE/BRDIST.md)
+- [Enti](Sorgenti/MB/DOC_OPE/BRENTI.md)
+- [Matricole](Sorgenti/MB/DOC_OPE/BRMATR.md)
+- [Risorse](Sorgenti/MB/DOC_OPE/BRRISO.md)

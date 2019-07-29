@@ -1,0 +1,2 @@
+- [Autorizzazioni specifiche Looc.up](Sorgenti/MB/DOC/B£AUTO_05A)
+- [Autorizzazioni operative Looc.up](Sorgenti/MB/DOC/B£AUTO_05B)

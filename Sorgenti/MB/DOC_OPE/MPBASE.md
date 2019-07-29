@@ -1,0 +1,3 @@
+- [Parametri di esecuzione](Sorgenti/MB/DOC_OGG/P_B£GPE2)
+- [Gestione Dati Scelte Video](Sorgenti/MB/DOC_OGG/P_B£MDV0)
+- [Gestione archivi](Sorgenti/MB/DOC_OGG/P_B£RF01)

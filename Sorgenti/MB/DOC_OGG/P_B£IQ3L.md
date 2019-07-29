@@ -1,0 +1,21 @@
+# LEGENDA
+**Ele** :             Indice Elemento Schiera £IQR3I
+**Nome** :            Nome del campo                                    (£IQ3CCD)
+**Intestazione** :    Intestazione campo                                (£IQ3CIN)
+**Operatore** :       Operatore di filtro                               (£IQ3COP)
+**Valore** :          Valore di filtro                                  (£IQR3V(Ele))
+**Oggetto** :         Tipo oggetto del campo                            (£IQ3COG)
+**Lungh** :           Lunghezza del campo                               (£IQ3CLU)
+**Nd** :              Numero decimali                                   (£IQ3CND)
+**Mu** :              Campo Multiplo                                    (£IQ3CMU)
+**Ob** :              Campo Obbligatorio                                (£IQ3COB)
+**Ck** :              Campo da controllare rispetto al tipo oggetto     (£IQ3CCT)
+**Di** :              Campo dinamico                                    (£IQ3CDI)
+**Sc** :              Campo di Shortcut                                 (£IQ3CSC)
+**Ca** :              Campo Case sensitive                              (£IQ3CCS)
+**Fu** :              Funzione                                          (£IQ3CFU)
+**Hi** :              Campo Hidden                                      (£IQ3CHI)
+**Pos** :             Posizione                                         (£IQ3CPO)
+**Valore default** :  Valore di default                                 (£IQ3CDF)
+**Parametro** :       Parametro                                         (£IQ3CPA)
+

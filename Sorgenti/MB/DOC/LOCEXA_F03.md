@@ -1,0 +1,3 @@
+# Personalizzazioni grafiche
+
+Ai grafici si possono impostare varie personalizzazioni grafica, che vanno dai colori da usare per le serie, alla visione della legenda, dei marks etc...

@@ -1,0 +1,3 @@
+# Note sulla quantità eccedente
+La quantità eccedente viene segnalata come suggerimento "PN/EL" (anche se l'eccedenza è presente non si usa "AE" perchè l'eccedenza present epotrebbe derivare da diverse "righe", ad esempio su più giacenze, e si dovrebbe disitribuire arbitrariamente (es. FIFO) l'eccedenza stessa. Con una fonte nuova, quindi separata, non c'è questo problema.
+Essendo una fonte "PN" si potrebbe, in linea teorica, scrivere un programma che applica questo suggerimento (magari uno spostamento); inoltre, cosa più interessante, anche in assenza del programma di applicazione si può dichiarare annullato (liv "9") o riattivato (liv "2") questo suggerimento a seconda che lo si voglia escludere da certe liste oppure riportarlo in esse.

@@ -1,0 +1,5 @@
+- [Liste di oggetti significativi e personali](Sorgenti/MB/DOC/A£DEMO_01)
+- [Nuovo oggetto in colonne aggiuntive](Sorgenti/MB/DOC/A£DEMO_51)
+- [Biglietti da visita](Sorgenti/MB/DOC/A£DEMO_55)
+ :  : DEC T(MB) P(DOC_DEM) K(DEM)
+- [Segnalazioni al laboratorio](Sorgenti/MB/DOC/A£DEMO_52)

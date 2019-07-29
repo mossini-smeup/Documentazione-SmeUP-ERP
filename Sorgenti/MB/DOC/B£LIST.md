@@ -1,0 +1,3 @@
+- [Definizione Oggetto Lista](Sorgenti/MB/DOC/B£LIST_00)
+- [Funzioni applicabili alle liste](Sorgenti/MB/DOC/B£LIST_01)
+- [Operazioni sulle liste](Sorgenti/MB/DOC/B£LIST_02)

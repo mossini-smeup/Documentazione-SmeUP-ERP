@@ -1,0 +1,7 @@
+- [Gestione documentazione](Sorgenti/MB/DOC_OGG/P_CQQM10)
+- [Gestione Liste di Distribuzione](Sorgenti/MB/DOC_OGG/P_B£IRTB)
+- [Stampa documenti distribuiti](Sorgenti/MB/DOC_OGG/P_CQIRTS)
+- [Gestione note strutturate](Sorgenti/MB/DOC_OGG/P_B£AMC0)
+- [Gestione Posta](Sorgenti/MB/DOC_OGG/P_B£IRT0)
+- [Gestione Distribuzione Documento](Sorgenti/MB/DOC_OGG/P_CQQM40)
+- [Gestione Distr. Per Ente](Sorgenti/MB/DOC_OGG/P_CQQM41)

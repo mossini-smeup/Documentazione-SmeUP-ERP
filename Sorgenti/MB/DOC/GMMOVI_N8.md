@@ -1,0 +1,4 @@
+# Collegamento P5 > V5
+ - **Prelievi P5 > V5** :  se impostato il flag aggiorna impegni origine in P5I del tipo impegno esterno e se la riga V5 è intestata ad un ordine / fase (Tabella V5B)
+ - **Ricevimento V5 -> Versamento P5** :  se la riga è intestata ad un ordine / fase e se è impostata, in V5B, una causale di versamento di C/Lavoro, ed è l'ultima fase, questa causale si sostituisce alla causale di versamento V5 e versa l'ordine P5. Non c'è motivo di differenziare i due comportamenti :  infatti solo se la causale versa l'ordine P5 si ha la necessità di diversificare le aree di versamento, in quato il materiale va a magazzino e non in WIP. Sapere che è un versamento di lavorazione all'ultima fase senza che esso versi l'ordine di produzione non pare significativo.
+ - **Ricevimento V5 -> Avanzamento P5** :  se la riga è intestata ad un ordine / fase e se è impostata, in V5B, una causale di avanzamento

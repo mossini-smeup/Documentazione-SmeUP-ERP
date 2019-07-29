@@ -1,0 +1,2 @@
+
+Le diverse visualizzazioni associate a una scheda sono riferite ai componenti contenuti nelle subsezioni. Se, ad esempio, la subsezione contiene una matrice sarà possibile visualizzarla come foglio Excel; se, invece, il componente contenuto è un albero sarà possibile visualizzarlo come Stella. Si rimanda pertanto alla documentazione specifica dei componenti per la spiegazione delle diverse visualizzazioni che questi possono assumere.

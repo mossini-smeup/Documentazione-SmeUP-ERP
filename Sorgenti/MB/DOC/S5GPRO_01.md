@@ -1,0 +1,2 @@
+# Logiche di funzionamento
+Tbd

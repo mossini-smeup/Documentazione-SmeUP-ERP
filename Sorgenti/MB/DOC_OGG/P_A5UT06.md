@@ -1,0 +1,1 @@
+Questo pgm serve a chi si trova in condizione di dover creare una linea civilistica a partire dalla linea fiscale :  tramite esso tutti i movimenti fiscali ad esclusione di quelli di ammortamento anticipato verranno duplicati nella linea civilistica. In tal modo si potranno sfruttare i valori storici degli ammortamenti ordinari senza dover ricalcolare tutto dall'inizio.

@@ -1,0 +1,2 @@
+# Modalità collegamento documenti V5
+Nella funzione di collegamento (V5COL0) vengono trattati i documenti con testata attiva (Livello = 2) e con righe valide (Livello < 8) si intende che una testata valida può contenere righe non ancora attive (es. passaggio da previsioni a ordini di righe a livello 0 che verranno successivamente passate di stato, esse però si devono collegare subito, ad esempio per scaricare la previsione)

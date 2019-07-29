@@ -1,0 +1,7 @@
+- [Gestione Ordini Produzione](Sorgenti/MB/DOC_OGG/P_P5OR01)
+- [Stampa lista ordini](Sorgenti/MB/DOC_OGG/P_P5OR51)
+- [Sintesi Ordini Produzione](Sorgenti/MB/DOC_OGG/P_P5SI02)
+- [Valorizzazione Ordini Produzione](Sorgenti/MB/DOC_OGG/P_P5OR90)
+- [Valorizzazione WIP](Sorgenti/MB/DOC_OGG/P_P5OR95)
+- [Fasatura ordini](Sorgenti/MB/DOC_OGG/P_P5FS01)
+- [Split dell&-x27;ordine di produzione](Sorgenti/MB/DOC_OGG/P_P5OR07)

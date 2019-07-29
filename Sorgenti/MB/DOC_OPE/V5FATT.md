@@ -1,0 +1,5 @@
+- [Azioni su Documenti Fatturabili](Sorgenti/MB/DOC_OGG/P_V5DO21I)
+- [Stampa Fatture](Sorgenti/MB/DOC_OGG/P_V5FA01)
+- [Stampa Interattiva Fatture](Sorgenti/MB/DOC_OGG/P_V5FA02)
+- [Contabilizzazione Fatture](Sorgenti/MB/DOC_OGG/P_V5FA05)
+- [Generazione Documenti Autofattura](Sorgenti/MB/DOC_OGG/P_V5FA10)

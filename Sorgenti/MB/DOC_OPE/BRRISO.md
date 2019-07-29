@@ -1,0 +1,3 @@
+- [Gestione Risorse](Sorgenti/MB/DOC_OGG/P_BRRI01)
+- [Stampe Risorse](Sorgenti/MB/DOC_OGG/P_BRRI51)
+- [Nuove funzionalità RISORSE](Sorgenti/MB/DOC_OPE/BRRISO_01)

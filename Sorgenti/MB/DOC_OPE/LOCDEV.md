@@ -1,0 +1,1 @@
+- [Richiamo G30](Sorgenti/MB/DOC_OPE/LOCDEV_01)

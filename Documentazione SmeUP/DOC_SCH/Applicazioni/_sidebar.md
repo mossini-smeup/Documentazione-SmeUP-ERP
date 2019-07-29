@@ -1,0 +1,13 @@
+# Elenco Applicazioni
+- [Funzioni Base](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000010/B£/_sidebar.md)
+- [Dati di Classificazione](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000010/C£/_sidebar.md)
+- [Workflow](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000010/WF/_sidebar.md)
+- [Business Intelligence](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000010/D9/_sidebar.md)
+- [Cespiti](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000030/A5/_sidebar.md)
+- [Contabilità Industriale](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000030/D5/_sidebar.md)
+- [Costi Avanzati](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000030/D0/_sidebar.md)
+- [MPS Piano Princ. Produzione](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000050/MP/_sidebar.md)
+- [MRP Pianific. Materiali](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000050/M5/_sidebar.md)
+- [Schedulaz. Capacità Finita](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000060/S5/_sidebar.md)
+- [Acquisti](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000070/V5/_sidebar.md)
+- [Magazzino](Documentazione%20SmeUP/DOC_SCH/Applicazioni/000080/GM/_sidebar.md)

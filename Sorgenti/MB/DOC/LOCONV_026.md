@@ -1,0 +1,9 @@
+ - Non è gestito l'invio automatico per uscita campo
+ - Non sono gestiti campi sovrapposti, sull'emulatore il risultato può essere imprevedibile.
+ - Se si usa una costante unica per l'intestazione di più colonne su un video normale, non si riesce ad allinearle correttamente.
+ - Se si ridenominano i nomi dei record dei file video, questi non sono riconosciuti ed il programma non è eseguibile in UI.
+ - Non è possibile gestire campi sovrapposti come intestazione di colonna.
+ - Se si emette l'intestazione con una write e nelle sucessive EXFMT non è più riemessa, l'intestazione viene persa.
+ - Se non si esegue l'EXFMT del control, sull'emulatore non sarà emessa la griglia.
+ - Per avere le intestazioni corrette della griglia, queste devono risiedere nel control.
+ - Le frasi da convertire non devono essere più lunghe di 80. Eventuali intestazioni di subfile a 132 vanno spezzate in due campi settati poi a programma

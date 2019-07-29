@@ -1,0 +1,12 @@
+# Funzioni Tecniche
+- [Standard Tecnici](Sorgenti/MB/DOC/A£BASE.md)
+- [Esempi&#x2f;Dimostrabilità](Sorgenti/MB/DOC/A£DEMO.md)
+- [Formazione Sme.up](Sorgenti/MB/DOC/A£FORM.md)
+- [Laboratorio](Sorgenti/MB/DOC/A£LABS.md)
+- [Supporto multilingua](Sorgenti/MB/DOC/A£LING.md)
+- [Monitor e performance](Sorgenti/MB/DOC/A£MOPE.md)
+- [News Sme.up](Sorgenti/MB/DOC/A£NEWS.md)
+- [TTR Time to Run](Sorgenti/MB/DOC/A£PLUG.md)
+- [L'approccio Sme.UP alla Human Computer Interaction](Sorgenti/MB/DOC/A£SHCI.md)
+- [Know how sistemistico](Sorgenti/MB/DOC/A£SYST.md)
+- [Test Gestione Archivi](Sorgenti/MB/DOC/A£WORK.md)

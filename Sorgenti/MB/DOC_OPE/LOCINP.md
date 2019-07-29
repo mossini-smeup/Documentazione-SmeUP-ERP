@@ -1,0 +1,1 @@
+- [Input panel](Sorgenti/MB/DOC_OPE/LOCINP_01)

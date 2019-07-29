@@ -1,0 +1,2 @@
+# C5C - TIPO FATTURA/REG. IVA - NO C5
+ :  : DEC T(ST) K(C5C)

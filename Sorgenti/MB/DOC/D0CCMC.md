@@ -1,0 +1,11 @@
+
+- [Set&-x27;n play](Sorgenti/MB/DOC/D0CCMC_00)
+- [Introduzione](Sorgenti/MB/DOC/D0CCMC_01)
+- [Costo Manuale](Sorgenti/MB/DOC/D0CCMC_11)
+- [Costo Dinamico](Sorgenti/MB/DOC/D0CCMC_12)
+- [Costo Base](Sorgenti/MB/DOC/D0CCMC_13)
+- [Logiche di Calcolo](Sorgenti/MB/DOC/D0CCMC_14)
+- [Costo Rimanenze Articolo](Sorgenti/MB/DOC/D0CCMC_15)
+- [Costo Preventivo](Sorgenti/MB/DOC/D0CCMC_16)
+- [Costo Consuntivo](Sorgenti/MB/DOC/D0CCMC_17)
+- [Costo Wip](Sorgenti/MB/DOC/D0CCMC_18)
