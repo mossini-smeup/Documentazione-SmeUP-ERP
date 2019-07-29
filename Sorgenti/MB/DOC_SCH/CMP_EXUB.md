@@ -18,4 +18,5 @@ Il B£SUP_02 presenta inoltre una funzione per mostrare le G30 disponibili in un
 <a class="tag">CMP_EXUB</a>
 <a class="tag">Schede</a>
 <a class="tag">Documentazione Schede</a>
+<a class="tag">Esempio TAG</a>
 
