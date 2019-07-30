@@ -43,11 +43,18 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                         output_file.write('  ' * iter_depth + '- [' + areeApp[filename] + '](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
                     else:
                         iter_depth = 1
-                
+
                 elif filename in applicazioni: # Se è un'applicazione
                     if 'DOC_VIS' in os.path.relpath(file_or_path):
                         if os.path.exists('Sorgenti/MB/DOC_VIS/' + filename +'.md'):
                             output_file.write('  ' * iter_depth + '- [' + applicazioni[filename] + '](' + "Sorgenti/MB/DOC_VIS/" + filename +'.md)\n')
+                    elif 'DOC_SER' in os.path.relpath(file_or_path):
+                        applicazioneEsistente = False
+                        for singleFile in os.listdir('Sorgenti/MB/DOC_SER'):
+                            nomeFile = singleFile.replace(".md","")
+                            if filename == singleFile[:2] and applicazioneEsistente == False:
+                                output_file.write('  ' * iter_depth + '- [' + applicazioni[filename] + '](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
+                                applicazioneEsistente = True
                     elif 'DOC_SCH' in os.path.relpath(file_or_path):
                         pathApplicazione = os.path.relpath(file_or_path) + '/_sidebar.md'
                         with open(pathApplicazione, "w", encoding='utf8') as f3:
