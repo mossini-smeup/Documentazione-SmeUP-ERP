@@ -338,7 +338,7 @@ def main():
     else:
         output = open(os.path.join(dir_input, filename), 'w+', encoding='utf8')
 
-    # Se è una cartella stampa nel file di indice il titolo
+    # Se è una cartella stampa nel file di indice il titolo ed eventualmente le categorie
     if os.path.isdir(dir_input):
         directoryName = dir_input[dir_input.rfind('/')+1:]
         if directoryName == 'DOC_APP':
