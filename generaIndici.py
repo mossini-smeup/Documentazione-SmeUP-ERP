@@ -208,7 +208,16 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                                             f.write('- [' + nomeFile + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
                                         else:
                                             f.write('- [' + nomiDOC_OGG[nomeFile] + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n') 
-
+                        else:
+                            with open('Documentazione SmeUP/DOC_OGG/Altro/_sidebar.md' , "w", encoding='utf8') as f:
+                                f.write('# Altri Oggetti\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_OGG'):
+                                    if singleFile[:2] != 'F_' and singleFile[:3] != 'LOA' and singleFile[:7] != 'V2LOCOS' and singleFile[:3] != 'OG_' and singleFile[:2] != 'P_' and singleFile[:3] != 'TA_' and singleFile[:2] != 'V3':
+                                        nomeFile = singleFile.replace('.md','')
+                                        if nomiDOC_OGG[nomeFile] == '':
+                                            f.write('- [' + nomeFile + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                                        else:
+                                            f.write('- [' + nomiDOC_OGG[nomeFile] + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
                             
 
 def mdfile_in_dir(dire):
