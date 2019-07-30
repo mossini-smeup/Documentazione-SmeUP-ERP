@@ -4,6 +4,29 @@ import os
 import shutil
 
 def creaCartelle():
+
+    if not os.path.exists('Documentazione SmeUP/DOC_SCH/Applicazioni'):
+        os.mkdir('Documentazione SmeUP/DOC_SCH/Applicazioni')
+    if not os.path.exists('Documentazione SmeUP/DOC_SCH/Componenti'):
+        os.mkdir('Documentazione SmeUP/DOC_SCH/Componenti')
+    if not os.path.exists('Documentazione SmeUP/DOC_SCH/UPP'):
+        os.mkdir('Documentazione SmeUP/DOC_SCH/UPP')
+    if not os.path.exists('Documentazione SmeUP/DOC_SCH/Oggetti'):
+        os.mkdir('Documentazione SmeUP/DOC_SCH/Oggetti')
+    if not os.path.exists('Documentazione SmeUP/DOC_SCH/Altro'):
+        os.mkdir('Documentazione SmeUP/DOC_SCH/Altro')
+    if not os.path.exists('Documentazione SmeUP/DOC_OGG/File'):
+        os.mkdir('Documentazione SmeUP/DOC_OGG/File')
+    if not os.path.exists('Documentazione SmeUP/DOC_OGG/Costruttori'):
+        os.mkdir('Documentazione SmeUP/DOC_OGG/Costruttori')
+    if not os.path.exists('Documentazione SmeUP/DOC_OGG/Classi'):
+        os.mkdir('Documentazione SmeUP/DOC_OGG/Classi')
+    if not os.path.exists('Documentazione SmeUP/DOC_OGG/Programmi'):
+        os.mkdir('Documentazione SmeUP/DOC_OGG/Programmi')
+    if not os.path.exists('Documentazione SmeUP/DOC_OGG/Tabelle'):
+        os.mkdir('Documentazione SmeUP/DOC_OGG/Tabelle')
+    if not os.path.exists('Documentazione SmeUP/DOC_OGG/Altro'):
+        os.mkdir('Documentazione SmeUP/DOC_OGG/Altro')
     for i in range(len(areeApplicative)):
         for codice, nome in areeApp.items(): 
             if nome == nomiAreeApplicative[i]:
@@ -14,16 +37,9 @@ def creaCartelle():
                     os.mkdir('Documentazione SmeUP/DOC_VIS/' + dirName)
                 if not os.path.exists('Documentazione SmeUP/DOC_OPE/' + dirName):
                     os.mkdir('Documentazione SmeUP/DOC_OPE/' + dirName)
-                if not os.path.exists('Documentazione SmeUP/DOC_SCH/Applicazioni'):
-                    os.mkdir('Documentazione SmeUP/DOC_SCH/Applicazioni')
-                if not os.path.exists('Documentazione SmeUP/DOC_SCH/Componenti'):
-                    os.mkdir('Documentazione SmeUP/DOC_SCH/Componenti')
-                if not os.path.exists('Documentazione SmeUP/DOC_SCH/Altro'):
-                    os.mkdir('Documentazione SmeUP/DOC_SCH/Altro')
                 if not os.path.exists('Documentazione SmeUP/DOC_SCH/Applicazioni/' + dirName):
                     os.mkdir('Documentazione SmeUP/DOC_SCH/Applicazioni/' + dirName)
                 for j in range(len(areeApplicative[i])):
-                    # print(areeApplicative[i][j])
                     dirName = areeApplicative[i][j]
                     pathApplicazione = 'Documentazione SmeUP/DOC_APP/' + codice + '/' + dirName
                     if not os.path.exists(pathApplicazione):
@@ -37,7 +53,6 @@ def creaCartelle():
                     pathApplicazione = 'Documentazione SmeUP/DOC_SCH/Applicazioni/' + codice + '/' + dirName
                     if not os.path.exists(pathApplicazione):
                         os.mkdir(pathApplicazione)
-
 
 def organizzaFile():
     basepath = './'
@@ -59,30 +74,21 @@ def organizzaFile():
                         shutil.copy(singleFile, pathModulo)
                         os.remove(singleFile)
 
-    '''for singleFile in os.listdir(basepath):
-        if os.path.isfile(os.path.join(basepath, singleFile)) and singleFile.endswith(".md") and singleFile != "README.md":
-            if not os.path.exists("Documentazione/" + singleFile):
-                print(singleFile)
-                shutil.move(os.path.abspath(singleFile), "Documentazione")'''
-
-
 def generaIndici():
     basepath = './'
     pathGeneraIndice = os.path.abspath('generaIndici.py')
     for dirname, dirnames, filenames in os.walk(basepath):
         if 'immagini' in dirnames: 
-            dirnames.remove('immagini') # Esclude la cartella immagini dal controllo
+            dirnames.remove('immagini') # Esclude la cartella dal controllo
         if '.git' in dirnames: 
-            dirnames.remove('.git') # Esclude la cartella immagini dal controllo
+            dirnames.remove('.git') # Esclude la cartella dal controllo
         if 'Sorgenti' in dirnames: 
-            dirnames.remove('Sorgenti') # Esclude la cartella immagini dal controllo
+            dirnames.remove('Sorgenti') # Esclude la cartella dal controllo
         if '__pycache__' in dirnames: 
-            dirnames.remove('__pycache__') # Esclude la cartella immagini dal controllo
-        for subdirname in dirnames:
-            if subdirname != '__pycache__': 
-                if len(subdirname) != 6 or subdirname in areeApp: # Se subdirname in moduli, non creo l'indice perchè esiste già
-                    os.system(pathGeneraIndice + " \"" + os.path.abspath(dirname) + "/" + subdirname + "\" -o")
-
+            dirnames.remove('__pycache__') # Esclude la cartella dal controllo
+        for subdirname in dirnames: 
+            if len(subdirname) != 6 or subdirname in areeApp: # Se subdirname in moduli, non creo l'indice perchè esiste già
+                os.system(pathGeneraIndice + " \"" + os.path.abspath(dirname) + "/" + subdirname + "\" -o")
 
 creaCartelle()
 #organizzaFile()
