@@ -56,7 +56,7 @@
         '<div>',
         '<p style="float: right"><a href="',
         docBase,
-        '" target="_blank" onclick="EditOnGithubPlugin.onClick(event)"><img src="edit.png" style="width:25px; height:25px">',
+        '" target="_blank" onclick="EditOnGithubPlugin.onClick(event)"><img src="edit.png" style="margin-left:20px; width:25px; height:25px">',
         '</a></p>',
         '</div>'
       ].join('')
