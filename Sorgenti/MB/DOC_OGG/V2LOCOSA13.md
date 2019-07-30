@@ -148,4 +148,4 @@ In relazione a queste modifiche è stata implementata l'apposita PTF B£00723A, 
 Le istruzioni di manipolazione dei dati e degli oggetti vengono comunque eseguite con le autorizzazioni di sistema dell'utente (e non del proprietario del programma) sugli oggetti relativi.
 
 ## Servizio di aggiornamento generico LOSUP_13
- :  : DEC T(MB) P(DOC_SER) K(LOSUP_13) D(Servizio di aggiornamento generico)
+- [SER Sevizio di aggiornamento generico](Sorgenti/MB/DOC_SER/LOSUP_13)

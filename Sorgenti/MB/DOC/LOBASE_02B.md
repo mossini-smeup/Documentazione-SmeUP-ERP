@@ -50,7 +50,7 @@ Può essere utilizzato per passare diversi oggetti, secondo due modalità :  **p
 Ogni programma che implementa un servizio può fornire tramite una schiera una tabella di regole per rendere possibili il controllo e l'immissione guidata della chiamata alle sue funzioni.
 
 Questa schiera può essere definita nella documentazione attiva del programma, in DOC_SER, membro nome programma ad es : 
- :  : DEC T(MB) P(DOC_SER) K(JATRE_29C) L(1)
+- [SXML Documentazione - modifica](Sorgenti/MB/DOC_SER/JATRE_29C)
 racchiusa tra le specifiche ..I.RUL e ..I.RUL.END oppure restituita dal programma in risposta a una chiamata con funzione '*JASEP2' (vecchia modalità, sconsigliata)
 
 ## STRUTTURA

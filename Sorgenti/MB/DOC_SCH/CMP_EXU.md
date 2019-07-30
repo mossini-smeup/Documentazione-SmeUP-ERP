@@ -19,9 +19,3 @@ Il B£SUP_02 presenta inoltre una funzione per mostrare le G30 disponibili in un
 - Non sono correttamente gestiti :  tipi dinamici della G30, ricerca sui valori particolari.
 - Per ora i controlli sui valori della G30 sono bloccanti solo sul campo che si sta editando :  bisogna gestire il controllo e l'aggiornamento multirecord.
 
-****
-<a class="tag">CMP_EXUB</a>
-<a class="tag">Schede</a>
-<a class="tag">Documentazione Schede</a>
-<a class="tag">Esempio TAG</a>
-
