@@ -5,7 +5,7 @@
 import argparse
 import os
 import re
-from AreeApplicative import applicazioni, areeApplicative, nomiAreeApplicative, areeApp, moduli, nomiDOC_SCH, moduliDOC_OPE
+from AreeApplicative import applicazioni, areeApplicative, nomiAreeApplicative, areeApp, moduli, nomiDOC_SCH, nomiDOC_OGG, moduliDOC_OPE
 
 def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_depth=0):
     """
@@ -65,7 +65,7 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                         output_file.write('  ' * iter_depth + '- [' + moduli[filename] + '](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/' + filename +')\n')
                 
                 else:
-                    if 'DOC_SCH' not in os.path.relpath(file_or_path):
+                    if 'DOC_SCH' not in os.path.relpath(file_or_path) and 'DOC_OGG' not in os.path.relpath(file_or_path):
                         output_file.write('  ' * iter_depth + '- [' + filename + '](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
 
                 if oneLevelIndex == False:
@@ -110,8 +110,8 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                                                 indiceModulo = 'Sorgenti/MB/DOC_OPE/' + nomeFile + '.md'
                                                 if os.path.exists(indiceModulo): # Se il modulo non ha il file di indice non viene inserito nell'elenco dei moduli
                                                     f2.write('- [' + moduliDOC_OPE[nomeFile] + '](' + indiceModulo +')\n')
-                    elif 'DOC_SCH' in os.path.relpath(file_or_path): # Elenca le applicazioni che hanno almeno un documento DOC_SCH
-                        if '\\Applicazioni\\_sidebar' in os.path.relpath(file_or_path):
+                    elif 'DOC_SCH' in os.path.relpath(file_or_path):
+                        if '\\Applicazioni\\_sidebar' in os.path.relpath(file_or_path): # Elenca le applicazioni che hanno almeno un documento DOC_SCH
                             with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
                                 f.write('# Elenco Applicazioni\n')
                                 for i in range(len(areeApplicative)):
@@ -126,20 +126,89 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                                                         f.write('- [' + applicazioni[areeApplicative[i][j]] + '](' + pathApplicazione.replace(' ', '%20') + ')\n')
                                                         applicazioneEsistente = True
                                             
-                        elif '\\Componenti\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_SCH relativi ai componenti
+                        elif '\\Componenti\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_SCH relativi ai Componenti
                             with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
                                 f.write('# Schede di Componenti\n')
                                 for singleFile in os.listdir('Sorgenti/MB/DOC_SCH'):
                                     if singleFile[:3] == 'CMP':
                                         nomeFile = singleFile.replace('.md','')
                                         f.write('- [' + nomiDOC_SCH[nomeFile] + '](Sorgenti/MB/DOC_SCH/' + singleFile +')\n')
+                        elif '\\UPP\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_SCH relativi agli UPP
+                            with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
+                                f.write('# Schede di UPP\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_SCH'):
+                                    nomeFile = singleFile.replace('.md','')
+                                    upp = ""
+                                    if '_' in nomeFile:
+                                        codice = nomeFile.rsplit('_')[0]
+                                        upp = nomeFile.rsplit('_')[1]
+                                        if len(upp) == 3 and len(codice) == 2 and codice in applicazioni:
+                                            f.write('- [' + nomiDOC_SCH[nomeFile] + '](Sorgenti/MB/DOC_SCH/' + singleFile +')\n')
+                        elif '\\Oggetti\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_SCH relativi agli Oggetti
+                            with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
+                                f.write('# Schede di Oggetti\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_SCH'):
+                                    nomeFile = singleFile.replace('.md','')
+                                    if '_' in nomeFile:
+                                        codice = nomeFile.rsplit('_')[0]
+                                        if len(codice) == 2 and codice not in applicazioni:
+                                            f.write('- [' + nomiDOC_SCH[nomeFile] + '](Sorgenti/MB/DOC_SCH/' + singleFile +')\n')
                         else:
                             with open('Documentazione SmeUP/DOC_SCH/Altro/_sidebar.md' , "w", encoding='utf8') as f:
                                 f.write('# Altre Schede\n')
                                 for singleFile in os.listdir('Sorgenti/MB/DOC_SCH'):
-                                    if singleFile[:3] != 'CMP' and singleFile[:2] not in applicazioni:
+                                    codice = ""
+                                    if '_' in singleFile:
+                                        codice = singleFile.rsplit('_')[0]
+                                    if singleFile[:3] != 'CMP' and singleFile[:2] not in applicazioni and len(codice) != 2:
                                         nomeFile = singleFile.replace('.md','')
                                         f.write('- [' + nomiDOC_SCH[nomeFile] + '](Sorgenti/MB/DOC_SCH/' + singleFile +')\n')
+                    elif 'DOC_OGG' in os.path.relpath(file_or_path):
+                        if '\\File\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_OGG relativi ai File
+                            with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
+                                f.write('# File\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_OGG'):
+                                    if singleFile[:2] == 'F_':
+                                       nomeFile = singleFile.replace('.md','')
+                                       f.write('- [' + nomiDOC_OGG[nomeFile] + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                        elif '\\Costruttori\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_OGG relativi ai Costruttori
+                            with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
+                                f.write('# Costruttori\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_OGG'):
+                                    if singleFile[:3] == 'LOA' or singleFile[:7] == 'V2LOCOS':
+                                       nomeFile = singleFile.replace('.md','')
+                                       f.write('- [' + nomiDOC_OGG[nomeFile] + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                        elif '\\Classi\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_OGG relativi alle Classi
+                            with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
+                                f.write('# Classi\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_OGG'):
+                                    if singleFile[:3] == 'OG_':
+                                        nomeFile = singleFile.replace('.md','')
+                                        if nomiDOC_OGG[nomeFile] == '':
+                                            f.write('- [' + nomeFile + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                                        else:
+                                            f.write('- [' + nomiDOC_OGG[nomeFile] + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                        elif '\\Programmi\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_OGG relativi ai Programmi
+                            with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
+                                f.write('# Programmi\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_OGG'):
+                                    if singleFile[:2] == 'P_':
+                                        nomeFile = singleFile.replace('.md','')
+                                        if nomiDOC_OGG[nomeFile] == '':
+                                            f.write('- [' + nomeFile + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                                        else:
+                                            f.write('- [' + nomiDOC_OGG[nomeFile] + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                        elif '\\Tabelle\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_OGG relativi alle Tabelle
+                            with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
+                                f.write('# Tabelle\n')
+                                for singleFile in os.listdir('Sorgenti/MB/DOC_OGG'):
+                                    if singleFile[:3] == 'TA_':
+                                        nomeFile = singleFile.replace('.md','')
+                                        if nomiDOC_OGG[nomeFile] == '':
+                                            f.write('- [' + nomeFile + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n')
+                                        else:
+                                            f.write('- [' + nomiDOC_OGG[nomeFile] + '](Sorgenti/MB/DOC_OGG/' + singleFile +')\n') 
+
                             
 
 def mdfile_in_dir(dire):
@@ -252,9 +321,17 @@ def main():
             output.write('# Documentazione Schede\n')
             output.write('- [Schede di Applicazioni](Documentazione%20SmeUP/DOC_SCH/Applicazioni/_sidebar)\n')
             output.write('- [Schede di Componenti](Documentazione%20SmeUP/DOC_SCH/Componenti/_sidebar)\n')
+            output.write('- [Schede di UPP](Documentazione%20SmeUP/DOC_SCH/UPP/_sidebar)\n')
+            output.write('- [Schede di Oggetti](Documentazione%20SmeUP/DOC_SCH/Oggetti/_sidebar)\n')
             output.write('- [Altre Schede](Documentazione%20SmeUP/DOC_SCH/Altro/_sidebar)\n')
         elif directoryName == 'DOC_OGG':
             output.write('# Documentazione per Oggetto\n')
+            output.write('- [File](Documentazione%20SmeUP/DOC_OGG/File/_sidebar)\n')
+            output.write('- [Costruttori](Documentazione%20SmeUP/DOC_OGG/Costruttori/_sidebar)\n')
+            output.write('- [Classi](Documentazione%20SmeUP/DOC_OGG/Classi/_sidebar)\n')
+            output.write('- [Programmi](Documentazione%20SmeUP/DOC_OGG/Programmi/_sidebar)\n')
+            output.write('- [Tabelle](Documentazione%20SmeUP/DOC_OGG/Tabelle/_sidebar)\n')
+            output.write('- [Altri Oggetti](Documentazione%20SmeUP/DOC_OGG/Altro/_sidebar)\n')
         elif directoryName == 'DOC_OPE':
             output.write('# Documentazione Operativa\n')
         elif directoryName == 'NWS':
