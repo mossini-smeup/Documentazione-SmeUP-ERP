@@ -5,7 +5,7 @@
 import argparse
 import os
 import re
-from AreeApplicative import applicazioni, areeApplicative, nomiAreeApplicative, areeApp, moduli, nomiDOC_SCH, nomiDOC_OGG, moduliDOC_OPE
+from AreeApplicative import applicazioni, areeApplicative, nomiAreeApplicative, areeApp, moduli, nomiDOC_SCH, nomiDOC_OGG, nomiDOC_SER, moduliDOC_OPE
 
 def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_depth=0):
     """
@@ -33,6 +33,8 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                     output_file.write('  ' * iter_depth + '- [Documentazione per Oggetto](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
                 elif filename == 'DOC_OPE':
                     output_file.write('  ' * iter_depth + '- [Documentazione Operativa](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
+                elif filename == 'DOC_SER':
+                    output_file.write('  ' * iter_depth + '- [Documentazione dei Servizi](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
                 elif filename == 'NWS':
                     output_file.write('  ' * iter_depth + '- [News](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
                 
@@ -110,6 +112,16 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                                                 indiceModulo = 'Sorgenti/MB/DOC_OPE/' + nomeFile + '.md'
                                                 if os.path.exists(indiceModulo): # Se il modulo non ha il file di indice non viene inserito nell'elenco dei moduli
                                                     f2.write('- [' + moduliDOC_OPE[nomeFile] + '](' + indiceModulo +')\n')
+                    elif 'DOC_SER' in os.path.relpath(file_or_path):
+                        for codice, nome in applicazioni.items():
+                            if codice in os.path.relpath(file_or_path):
+                                with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f2:
+                                    f2.write('# ' + nome + '\n')
+                                    for singleFile in os.listdir('Sorgenti/MB/DOC_SER'):
+                                        nomeFile = singleFile.replace(".md","")
+                                        if codice == singleFile[:2]:
+                                            indiceFile = 'Sorgenti/MB/DOC_SER/' + nomeFile + '.md'
+                                            f2.write('- [' + nomiDOC_SER[nomeFile] + '](' + indiceFile +')\n')
                     elif 'DOC_SCH' in os.path.relpath(file_or_path):
                         if '\\Applicazioni\\_sidebar' in os.path.relpath(file_or_path): # Elenca le applicazioni che hanno almeno un documento DOC_SCH
                             with open(os.path.relpath(file_or_path), "w", encoding='utf8') as f:
@@ -343,6 +355,8 @@ def main():
             output.write('- [Altri Oggetti](Documentazione%20SmeUP/DOC_OGG/Altro/_sidebar)\n')
         elif directoryName == 'DOC_OPE':
             output.write('# Documentazione Operativa\n')
+        elif directoryName == 'DOC_SER':
+            output.write('# Documentazione dei Servizi\n')
         elif directoryName == 'NWS':
             output.write('# News\n')
         # elif directoryName in applicazioni:
