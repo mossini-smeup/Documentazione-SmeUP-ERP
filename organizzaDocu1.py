@@ -37,6 +37,8 @@ def creaCartelle():
                     os.mkdir('Documentazione SmeUP/DOC_VIS/' + dirName)
                 if not os.path.exists('Documentazione SmeUP/DOC_OPE/' + dirName):
                     os.mkdir('Documentazione SmeUP/DOC_OPE/' + dirName)
+                if not os.path.exists('Documentazione SmeUP/DOC_SER/' + dirName):
+                    os.mkdir('Documentazione SmeUP/DOC_SER/' + dirName)
                 if not os.path.exists('Documentazione SmeUP/DOC_SCH/Applicazioni/' + dirName):
                     os.mkdir('Documentazione SmeUP/DOC_SCH/Applicazioni/' + dirName)
                 for j in range(len(areeApplicative[i])):
@@ -48,6 +50,9 @@ def creaCartelle():
                     if not os.path.exists(pathApplicazione):
                         os.mkdir(pathApplicazione)
                     pathApplicazione = 'Documentazione SmeUP/DOC_OPE/' + codice + '/' + dirName
+                    if not os.path.exists(pathApplicazione):
+                        os.mkdir(pathApplicazione)
+                    pathApplicazione = 'Documentazione SmeUP/DOC_SER/' + codice + '/' + dirName
                     if not os.path.exists(pathApplicazione):
                         os.mkdir(pathApplicazione)
                     pathApplicazione = 'Documentazione SmeUP/DOC_SCH/Applicazioni/' + codice + '/' + dirName
