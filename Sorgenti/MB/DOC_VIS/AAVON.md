@@ -16,4 +16,4 @@ Il tutto avveniva con l'RPG e sull'AS400, un linguaggio ed un server "bistrattat
 
 ### L' oggetto ed i suoi attributi : 
 in questo cammino sono stati sviluppati anche strumenti che permettono di espandere gli attributi di un oggetto, ossia le sue informazioni, chiamate OAV (oggetto attributo valore). Questo ha permesso a Sme.UP di superare la mancanza di informazioni gestite dai sistemi conferenti, integrandole con una propria struttura di attributi. Ad esempio, se si vuole definire per l'oggetto articolo il parametro "diametro" , oppure "contenuto di carbonio", si può utilizzare questa informazione per riepilogare il fatturato per "diametro" o "contenuto di carbonio".
- :  : DEC T(MB) P(DOC_OPE) K(B£_OAV) D(L'oggetto applicativo ed i suoi attributi)
+- [Attributi di un oggetto](Sorgenti/MB/DOC_OPE/B£_OAV)

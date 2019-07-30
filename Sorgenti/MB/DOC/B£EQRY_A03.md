@@ -185,5 +185,13 @@ Vista la molteplicità delle forme di schemi possibilità è stata prevista la p
 # Modificare il setup dello schema
 Per quel che riguarda le funzionalità di setup, si rimanda alla documentazione operativa della matrice. In essa vengono esposte tutte le funzionalità grafiche disponibili per l'utente.
 
- :  : I.INC.MBR Fil(DOC_OPE) Mem(LOCEXB)
+## Documenti operativi
+- [Matrice in generale](Sorgenti/MB/DOC_OPE/LOCEXB_A1)
+- [Colonne matrice](Sorgenti/MB/DOC_OPE/LOCEXB_A2)
+- [Righe matrice](Sorgenti/MB/DOC_OPE/LOCEXB_A3)
+- [Celle matrice](Sorgenti/MB/DOC_OPE/LOCEXB_A4)
+- [Matrice raggruppamento](Sorgenti/MB/DOC_OPE/LOCEXB_A5)
+- [Bottoniera matrice](Sorgenti/MB/DOC_OPE/LOCEXB_A6)
+- [FAQ matrice](Sorgenti/MB/DOC_OPE/LOCEXB_A7)
+- [Copertina di una Matrice](Sorgenti/MB/DOC_OPE/LOCEXB_A8)
 

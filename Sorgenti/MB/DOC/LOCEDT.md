@@ -43,4 +43,4 @@ Gli esempi del componente sono consultabili tramite due sezioni differenti :
 # Documenti applicativi
  :  : DEC K(Esempi) D( Esempi con i Setup attualmente implementati) X(F(EXD;*SCO;) 2(MB;SCP_SCH;WETEST_EDT)) L(1)
 - [Struttura XML](Sorgenti/MB/DOC/LOCEDT_XML)
- :  : DEC T(MB) P(DOC_OPE) K(LOCEDT_SYX)
+- [Sintassi linguaggio documentazione](Sorgenti/MB/DOC_OPE/LOCEDT_SYX)

@@ -40,7 +40,7 @@ Per verificare la quadratura dei dati estratti è possibile effettuare un'analis
 
 Per maggiori istruzioni sull'utilizzo e la creazione di liste si veda il seguente.
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 
 ## Controllo del limite dei 10.000 euro
 

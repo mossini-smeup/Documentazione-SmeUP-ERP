@@ -38,7 +38,7 @@ Per il tag FLT.FLD ricopre un ruolo particolarmente importante il nome del campo
 
 Compilate queste informazioni, utilizzando la query nelle sezioni UQR (si veda il modulo LOSUIR) sarà automatica l'attivazione della richiesta all'utente dei campi di filtro e l'utilizzo degli stessi nel risultato della query.
 
-- [Standard User Input Requests](Sorgenti/TA/B£AMO/LOSUIR)
+ :  : DEC T(TA) P(B£AMO) K(LOSUIR) L(1)
 
 
 ## Utilizzo di un filtro di job in un servizio - generalità
@@ -48,8 +48,8 @@ Il filtro di job, è una funzionalità di filtro generico, applicabile a qualsia
 Qualora la funzionalità del filtro di job sia attiva nella scheda è presentato il tasto funzione **F13**.
 
 Tali funzionalità si appoggiano alla /COPY £IQ3, ed all'istanza E/*JOB della classe Q3.
-- [](Sorgenti/MB/QILEGEN/£IQ3)
-- [CQ3 - Definizione calcolo costo](Sorgenti/OG//Q3)
+ :  : DEC T(MB) P(QILEGEN) K(£IQ3) L(1)
+ :  : DEC T(OG) P() K(Q3) L(1)
 
 ### Specifiche
 

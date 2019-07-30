@@ -11,7 +11,7 @@ All'interno del formato guida è necessario specificare i seguenti campi :
 
  - Codice della lista di conti per cui si voglia eseguire la funzione. Nel caso in cui il campo venga lasciato bianco il sistema analizzerà l'elenco completo dei conti contabili.Per dettagli sull'utilizzo delle liste oggetti si veda : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS) I(Liste oggetti) L(1)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 
  - Funzione e Metodo. Per l'esecuzione delle scritture di oscillazione cambio è necessario impostare questi campi rispettivamente con M e K.
 - Modalità. In questo campo è necessario indicare il tipo azione da eseguire. Le modalità disponibili per l'esecuzione di questa funzione sono : 
@@ -51,7 +51,15 @@ Dati registrazione. Nei dati a seguire sono riporati i parametri per l'esecuzion
 - Conto Differenze Passive
 
 
- :  : I.INC.MBR Fil(DOC_OPE) Mem(C5C010_01)
+All'interno delle impostazioni sono disponibili le memorizzazioni video attraverso cui e' possibile salvare una specifica configurazione delle impostazioni : 
+
+![C5C010_072](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_072.png)
+Le memorizzazioni salvate saranno poi richiamabili direttamente dal formato guida attraverso l'utilizzo dei caratteri di ricerca all'interno dello specifico campo : 
+
+![C5C010_073](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_073.png)
+Per maggiori dettagli sull'utilizzo delle memorizzazioni video si veda il seguente : 
+
+- [Gestione Dati Scelte Video](Sorgenti/MB/DOC_OGG/P_B£MDV0)
 
  :  : I.INC.MBR Lib(SMEDEV) Fil(DOC_OPE) Mem(C5BASE_01) Tag(Parzializazioni)
 

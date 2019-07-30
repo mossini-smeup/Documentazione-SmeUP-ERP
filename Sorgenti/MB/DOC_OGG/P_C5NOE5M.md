@@ -13,9 +13,9 @@ All'interno del formato guida è necessario specificare i seguenti campi :
 
  - Codice dell'oggetto o della lista di oggetti di cui si voglia analizzare il mastrino. La compilazione di questo campo è facilitata dalla presenza dei classici caratteri di ricerca. Per maggiori informazioni su questi caratteri si veda il seguente : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_RIC) I(Ricerche speciali) L(1)
+- [Ricerche](Sorgenti/MB/DOC_OPE/B£_RIC)
 Per dettagli sull'utilizzo delle liste oggetti si veda invece : 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS) I(Liste oggetti) L(1)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 
  - Funzione. Per l'analisi dei mastrini questo campo deve essere impostato a M
  - Metodo. Sono disponibili diversi metodi per l'analisi dei mastrini : 
@@ -55,14 +55,14 @@ Digitando il tasto F17 o selezionando il relativo bottone è possibile accedere 
  - Ometti saldo iniziale. E' un campo sì/no, se impostato a 1 (sì) non verrà visualizzato ne conteggiato nel valore progressivo il saldo iniziale del mastrino.
  - Causali. Se impostata verranno visualizzate le sole registrazioni contabili la cui causale sia presente all'interno della lista. Per l'impostazione di una lista di valori si veda il seguente : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS) I(Liste oggetti) L(1)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 
  - Escludi gestionali stornate. E' un campo sì/no, se impostato a 1 (sì) non verranno visualizzate le registrazioni gestionali stornate.
  - Tipo ente intestatario. Permette di visualizzare le sole registrazioni che abbiano in testata un ente della tipologia impostata in questo campo.
  - Codice ente intestatario. Permette di visualizzare le sole registrazioni che abbiano in testata l'ente indicato in questo campo.
  - Lista ente intestatario. Permette di definire una lista di enti; se impostata la lista verranno visualizzate le sole registrazioni che abbiano in testata uno degli enti della lista. Per l'impostazione di una lista di valori si veda il seguente : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS) I(Liste oggetti) L(1)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 
  - Solo intercompany. E'un campo sì/no, se impostato a 1 (sì) verranno visualizzate le registrazioni intercompany.
  - Singola contropartita. Indicando il codice di un conto contabile permette di eseguire un filtro sulle registrazioni contabili al cui interno sia riportato come contropartita il conto indicato.
@@ -82,7 +82,7 @@ Digitando il tasto F17 o selezionando il relativo bottone è possibile accedere 
  -- 6 - Schema. Permette di personalizzare le informazioni visualizzate attraverso la definizione di uno schema utente. Lo schema da utlizzare sarà impostato nel campo subito sotto.
  - Schema. Attraverso questo campo è possibile definire lo schema utente da utilizzare per la visualizzazione delle informazioni di dettaglio. Per maggiori infromazioni sull'impostazione e utilizzo di schemi utente si veda il seguente : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_SCH) I(Schemi Visualizzazione) L(1)
+- [Schemi di visualizzazione e stampa](Sorgenti/MB/DOC_OPE/B£_SCH)
 
  - Valuta di conto. E' un campo sì/no, se impostato a 1 (sì) e il conto è in valuta verranno visualizzate le registrazioni in euro.
  - Note. Permette di visualizzare o meno le note delle registrazioni contabili. Le opzioni disponibili sono : 
@@ -123,7 +123,15 @@ Digitando il tasto F17 o selezionando il relativo bottone è possibile accedere 
  - Ometto saldo intestazione.
 
 
- :  : I.INC.MBR Fil(DOC_OPE) Mem(C5C010_01)
+All'interno delle impostazioni sono disponibili le memorizzazioni video attraverso cui e' possibile salvare una specifica configurazione delle impostazioni : 
+
+![C5C010_072](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_072.png)
+Le memorizzazioni salvate saranno poi richiamabili direttamente dal formato guida attraverso l'utilizzo dei caratteri di ricerca all'interno dello specifico campo : 
+
+![C5C010_073](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_073.png)
+Per maggiori dettagli sull'utilizzo delle memorizzazioni video si veda il seguente : 
+
+- [Gestione Dati Scelte Video](Sorgenti/MB/DOC_OGG/P_B£MDV0)
 
  :  : I.INC.MBR Lib(SMEDEV) Fil(DOC_OPE) Mem(C5BASE_01) Tag(Parzializazioni)
 

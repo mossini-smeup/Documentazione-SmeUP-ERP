@@ -10,9 +10,9 @@ All'interno del formato guida sono disponibili i seguenti campi :
 
  - Codice dell'ente o della lista di enti di cui si voglia analizzare l'allineamento delle coordinate bancarie. La compilazione di questo campo è facilitata dalla presenza dei classici caratteri di ricerca. Per maggiori informazioni su questi caratteri si veda il seguente : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_RIC) I(Ricerche speciali) L(1)
+- [Ricerche](Sorgenti/MB/DOC_OPE/B£_RIC)
 Per dettagli sull'utilizzo delle liste oggetti si veda invece : 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS) I(Liste oggetti) L(1)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 
  - Funzione. Per la verifica delle coordinate bancarie il campo deve essere compilato con V.
  - Metodo. Per la verifica delle coordinate bancarie il campo deve essere compilato con B.
@@ -42,7 +42,15 @@ Digitando il tasto F17 o selezionando il relativo bottone è possibile accedere 
 - Controllo codice pagamento su documenti. Compilando questo campo con 1è possibile fare in modo che venga analizzato anche il codice pagamento riportato sui documenti :  verrranno quindi mostrati anche i documetni che presentano un codice pagamento diverso rispetto a quello riportato sull'anagrafica dell'ente.
 
 
- :  : I.INC.MBR Fil(DOC_OPE) Mem(C5C010_01)
+All'interno delle impostazioni sono disponibili le memorizzazioni video attraverso cui e' possibile salvare una specifica configurazione delle impostazioni : 
+
+![C5C010_072](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_072.png)
+Le memorizzazioni salvate saranno poi richiamabili direttamente dal formato guida attraverso l'utilizzo dei caratteri di ricerca all'interno dello specifico campo : 
+
+![C5C010_073](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_073.png)
+Per maggiori dettagli sull'utilizzo delle memorizzazioni video si veda il seguente : 
+
+- [Gestione Dati Scelte Video](Sorgenti/MB/DOC_OGG/P_B£MDV0)
 
 ### Parzializzazioni
 

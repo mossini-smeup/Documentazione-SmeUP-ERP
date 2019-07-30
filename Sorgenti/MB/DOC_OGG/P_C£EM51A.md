@@ -3,4 +3,4 @@
 ## Formato di lancio
 ![C£EM51_01](http://localhost:3000/immagini/MBDOC_OGG-P_C£EM51A/CXEM51_01.png)
 Per le modalità di gestione stampe vedi lo specifico documento (cfr. B£_STA Stampe)
- :  : DEC T(MB) P(DOC_OPE) K(B£_STA)
+- [Stampe](Sorgenti/MB/DOC_OPE/B£_STA)

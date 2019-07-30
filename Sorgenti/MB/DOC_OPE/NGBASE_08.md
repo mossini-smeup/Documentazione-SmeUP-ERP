@@ -72,9 +72,11 @@ Permette di uscire dal software. Nel caso fossero state effettuate modifiche al 
 ## Funzioni Disponibili
 
 
-
-| .COL Txt="Codice Funzione" Lun="70" | .COL Txt="Descrizione"  A="L" |
+| 
+| .COL Txt="Codice Funzione" Lun="70" |
 | ---|----|
+| 
+| .COL Txt="Descrizione"  A="L" |
 | BOARDINGPASS|Richiesta Boarding Pass |
 | BOOKING|Emissione Prenotazione Cliente |
 | CASHMOVEMENTS|Registrazione Entrate Uscite di Cassa |

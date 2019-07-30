@@ -6,7 +6,7 @@ Il formato guida si presenta nel seguente modo :
 
 ![C5C040_016](http://localhost:3000/immagini/MBDOC_OGG-P_C5NOYL0/C5C040_016.png)
 All'interno del formato guida è necessario definire l'ente o la lista enti su cui eseguire l'interrogazione in funzione del fatto che l'interrogazione venga lanciata per un singolo ente o per una lista enti. Nel secondo caso, lasciando il campo blank verranno presi in considerazione tutti gli enti del tipo selezionato (clienti o fornitori); per definire una specifica lista di enti si veda la documentazione relativa alla gestione liste : 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS) I(Gestione liste oggetti) L(1)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 Nel campo 'Modalità' è necessario indicare il tipo di output desiderato.
 Le modalità disponibili per l'esecuzione di questa funzione sono : 
  * 1 - Stampa :  permette di stampare la lista documenti in attesa di fattura.

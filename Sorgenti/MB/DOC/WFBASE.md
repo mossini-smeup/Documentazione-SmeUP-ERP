@@ -12,7 +12,7 @@
 - [Installazione&-x3a; oggetti richiesti](Sorgenti/MB/DOC/WFBASE_016)
 - [Autorizzazioni Work.up](Sorgenti/MB/DOC/WFBASE_006)
 - [Come si costruisce un workflow](Sorgenti/MB/DOC/WFBASE_018)
- :  : DEC T(MB) P(DOC_OPE) K(LOCWFD_A)
+- [Workflow designer](Sorgenti/MB/DOC_OPE/LOCWFD_A)
 - [Definizione delle responsabilità](Sorgenti/MB/DOC/WFBASE_031)
 - [Sintassi script WF](Sorgenti/MB/DOC/WFBASE_007)
 - [Variabili utilizzabili nel workflow](Sorgenti/MB/DOC/WFBASE_009)

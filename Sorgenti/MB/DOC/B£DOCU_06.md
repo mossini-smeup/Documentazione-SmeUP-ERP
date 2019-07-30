@@ -29,7 +29,7 @@ Il programma di composizione del manuale ricerca anche il responsabile e lo stam
 
 ## Come si modifica la documentazione
 Si utilizza il componente grafico di Loocup per la gestione dei testi : 
- :  : DEC T(MB) P(DOC_OPE) K(LOCEDT) L(1)
+- [Text editor](Sorgenti/MB/DOC_OPE/LOCEDT)
 
 ## Elenco macro di documentazione
 - [Elenco MACRO di documentazione](Sorgenti/MB/DOC/B£DOCU_40)

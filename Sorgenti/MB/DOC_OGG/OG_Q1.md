@@ -3,10 +3,10 @@
 L'oggetto Q1 una matrice di dati (nel senso matematico del termine) costituite da un elenco di righe facenti riferimento ad istanze della medesima classe (un elenco di articoli, di clienti, di movimenti di magazzino ecc.).
 
 In questa accezione una query può essere rappresentata come un'aggregazione di 4 elementi : 
-- [CQ5 - Fmea-probabilita di verificarsi](Sorgenti/OG//Q5)
-- [CQ2 - Stato rilascio&-x2f;approvazione pr](Sorgenti/OG//Q2)
-- [CQ3 - Definizione calcolo costo](Sorgenti/OG//Q3)
-- [CQ4 - Obbligatorieta  controlli](Sorgenti/OG//Q4)
+ :  : DEC T(OG) P() K(Q5)      I(_7_Fonte dati              )
+ :  : DEC T(OG) P() K(Q2)      I(_7_Schema                  )
+ :  : DEC T(OG) P() K(Q3)      I(_7_Filtro                  )
+ :  : DEC T(OG) P() K(Q4)      I(_7_Ordinamento             )
 
 La fonte dati rappresenta l'origine dei dati in cui ricercare gli oggetti, fornisce delle query che è possibile eseguire per lo specifico contenitore.
 Lo schema imposta le proprietà dell'oggetto che arricchiscono il record restituito. Il filtro parzializza i record da restituire. L'ordinamento sequenzia i record.

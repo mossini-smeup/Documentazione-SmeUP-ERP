@@ -11,9 +11,9 @@ All'interno del formato guida sono disponibili i seguenti campi :
 
  - Codice dell'oggetto o della lista di oggetti di cui si voglia analizzare il partitario. La compilazione di questo campo è facilitata dalla presenza dei classici caratteri di ricerca. Per maggiori informazioni su questi caratteri si veda il seguente : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_RIC) I(Ricerche speciali) L(1)
+- [Ricerche](Sorgenti/MB/DOC_OPE/B£_RIC)
 Per dettagli sull'utilizzo delle liste oggetti si veda invece : 
- :  : DEC T(MB) P(DOC_OPE) K(B£_LIS) I(Liste oggetti) L(1)
+- [Liste oggetti](Sorgenti/MB/DOC_OPE/B£_LIS)
 
  - Funzione. Per l'analisi dei partitari questo campo deve essere impostato a P
  - Metodo. Per l'analisi dei partitari è disponibile la sola modalità A (Sintesi partite).
@@ -54,7 +54,7 @@ Digitando il tasto F17 o selezionando il relativo bottone è possibile accedere 
 -- Default - Dovuto/Pagato/Residuo/Descrizione
 - Schema utente :  attraverso questo campo è possibile definire lo schema utente da utilizzare per la visualizzazione delle informazioni di dettaglio. Per maggiori infromazioni sull'impostazione e utilizzo di schemi utente si veda il seguente : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_SCH) I(Schemi Visualizzazione) L(1)
+- [Schemi di visualizzazione e stampa](Sorgenti/MB/DOC_OPE/B£_SCH)
 
 - Schema utente totali :  permette di definire uno schema utente da applicare ai totali.
 - Metodo dettaglio :  definisce la modalità di visualizzaione del dettaglio della partita. Le opzioni disponibili sono : 
@@ -98,7 +98,15 @@ Digitando il tasto F17 o selezionando il relativo bottone è possibile accedere 
 - Ometti data/utente. E' un campo sì/no, se impostato a 1 (sì) in fase di stampa vengono omessi la data e l'utente di lancio.
 
 
- :  : I.INC.MBR Fil(DOC_OPE) Mem(C5C010_01)
+All'interno delle impostazioni sono disponibili le memorizzazioni video attraverso cui e' possibile salvare una specifica configurazione delle impostazioni : 
+
+![C5C010_072](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_072.png)
+Le memorizzazioni salvate saranno poi richiamabili direttamente dal formato guida attraverso l'utilizzo dei caratteri di ricerca all'interno dello specifico campo : 
+
+![C5C010_073](http://localhost:3000/immagini/MBDOC_OPE-C5C010_01/C5C010_073.png)
+Per maggiori dettagli sull'utilizzo delle memorizzazioni video si veda il seguente : 
+
+- [Gestione Dati Scelte Video](Sorgenti/MB/DOC_OGG/P_B£MDV0)
 
 ### Parzializzazioni
 

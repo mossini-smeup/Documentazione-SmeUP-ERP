@@ -350,14 +350,29 @@ Sono stati realizzati nuovi passi MPS che implementano il calcolo della previsio
 Questo passo calcola, a partire da una vista di input**(vista storica)**la previsione futura con il metodo di Holt Winters (nel seguito HW) e ne memorizza il risultato nella vista di output**(vista previsioni)**. NB; nella vista di output oltre alle previsioni nei periodi futuri vengono calcolate anche le previsioni HW relative alla storia (in questo modo è possibile ad esempio l'applicazione dell'autofit senza arretramento e per il calcolo del coefficiente di bontà della previsione).
 Per una esposizione dettagliata del metodo HW : 
 - [Previsioni con Holt Winters](Sorgenti/MB/DOC/B£MATE_01)
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC002)
+### Impostazioni
+Il piano deve essere a periodi omogenei (a mesi, settimane, ecc..). Tutti i valori da impostare (periodi di previsione, di storia, ecc..) vanno impostati in questa unità di misura.
 ### Periodicità
 E' un campo obbligatorio. Si imposta il numero di periodi dopo i quali la serie assume, approssimativamente, lo stesso valore. Ad esempio, una periodicità di 12 mesi indica che la forma della serie si ripete (con picchi e valli) dopo questo intervallo.
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC003)
+### Frontiera
+E' un campo obbligatorio. Si imposta l'ultimo periodo che, nella serie di input, viene considerato "nel passato". La previsione inizia ad essere calcolata dal periodo successivo.
+
+### Numero periodi di previsione
+E' un campo obbligatorio. Indica il numero di periodi, a partire da quello successivo alla frontiera, per cui si calcola la previsione. La somma dei periodi di previsione e della frontiera non può superare 120, per non sfondare i periodi del piano. Questo controllo implica che sia la frontiera sia la previsione siano, singolarmente, minori di questo valore.
+
+### Numero periodi di storia
+E' un campo obbligatorio. Indica il numero di periodi, a partire dalla frontiera all'indietro, che vengono utilizzati per la determinazione dei parametri di calcolo del metodo. Non può quindi essere maggiore della frontiera, altrimenti provocherebbe uno sfondamento nel passato.
 Non può essere minore della periodicità aumentata di 1, in HW additivo, e di due volte la periodicità, in HW moltiplicativo. Una storia più estesa (e quindi almeno di due periodicità) smorza gli effetti della stagionalità.
 ### Numero periodi iniziali
 E' un campo facoltativo :  se non impostato, si assume pari alla periodicità. Deve essere maggiore di 1 e minore o uguale alla storia. Indica il numero di periodi su cui si esegue l'interpolazione per determinare i valori iniziali  di livello e trend, necessari per il calcolo. Un valore vicino ad 1 rafforza i periodi iniziali, un valore vicino alla storia considera tutti i periodi in modo più uniforme.
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC004)
+### Esempio di impostazione periodi
+Con i seguenti valori : 
+* Frontiera = 35
+* N. Periodi di Storia = 24
+* N. Periodi di Previsione = 12
+Si ottiene la seguente griglia : 
+* Storia :  dal periodo 12 al 35 (estremi compresi)
+* Previsione :  dal periodo 36 al periodo 47 (estremi compresi)
 ### Fattori di smorzamento
 **Alfa, Beta, Gamma**
 Indicano il peso, all'interno della storia, dei periodi più recenti rispetto a quelli  più remoti, rispettivamente per il livello, il trend e la stagionalità. Il loro valore va da 0 (conta solo il primo periodo) ad 1 (conta solo l'ultimo periodo). Per ognuno di essi si può, in modo indipendente dagli altri due : 
@@ -373,7 +388,11 @@ A seconda delle versioni installate, se impostato il campo autofit può assumere
 Se si imposta di calcolare almeno uno dei tre fattori di smorzamento, e la storia non vale almeno tre periodicità, deve essere impostato questo campo, e quindi eseguire  il test direttamente sul periodo di previsione. In assenza di questa impostazione si devono poter ritagliare due periodicità di training ed una di test. A rigore, per l'HW additivo, sarebbero sufficienti due periodicità più uno, ma si è preferito  avere un periodo di training più robusto.
 ### HW Moltiplicativo
 Se impostato, la previsione verrà eseguita con il metodo moltiplicativo, (più sensibile alla variazioni stagionali). Se invece si lascia in bianco, verrà utilizzato il metodo additivo (impostazione consigliata).
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC005)
+### Mantiene negativi
+Il calcolo può produrre valori di previsione negativi. Se impostato questo valore, essi, nella parte di previsione effettiva (oltre la frontiera) verranno mantenuti, se invece viene lasciato vuoto, verranno portati a zero. Nella parte storica (previsioni dall'inizio della storia alla frontiera) i negativi vengono sempre mantenuti, essendo valori utilizzati nel calcolo dello scostamento tra realtà e previsione, e quindi un loro azzeramento implicherebbe una riduzione arbitraria dello scostamento stesso.
+
+### N. Decimali di arrotondamento
+Se impostato un valore da 0 a 3, si esegue l'arrotondamento per il numero corrispondente di decimali. A differenza dell'azzeramento dei negativi, l'arrotondamento viene eseguito su tutta la previsione, sia effettiva sia storica.
 ### Indice autofit
 Se impostato il calcolo dei fattori di smorzamento tramite autofit, in questo campo si seleziona l'indice di confronto per stabilire la migliore previsione, tra i tre valori calcolati e memorizzati nei numeri dell'MPS : 
 * % di errore (default)
@@ -407,10 +426,29 @@ Per ogni record di previsione viene scritta una vista che riporta la statistica 
 ### Introduzione
 Questo passo calcola, a partire da una vista di input**(vista storico)**la previsione futura, con il metodo della regressione lineare.
 Si determina la retta che meglio interpola la vista di input, minimizzandone la distanza con i valori della vista, e su di essa si calcolano ii valori della vista di output**(vista previsioni).
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC002)
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC003)
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC004)
- :  : I.INC.MBR Fil(DOC_OPE) Mem(MP_INC005)
+### Impostazioni
+Il piano deve essere a periodi omogenei (a mesi, settimane, ecc..). Tutti i valori da impostare (periodi di previsione, di storia, ecc..) vanno impostati in questa unità di misura.
+### Frontiera
+E' un campo obbligatorio. Si imposta l'ultimo periodo che, nella serie di input, viene considerato "nel passato". La previsione inizia ad essere calcolata dal periodo successivo.
+
+### Numero periodi di previsione
+E' un campo obbligatorio. Indica il numero di periodi, a partire da quello successivo alla frontiera, per cui si calcola la previsione. La somma dei periodi di previsione e della frontiera non può superare 120, per non sfondare i periodi del piano. Questo controllo implica che sia la frontiera sia la previsione siano, singolarmente, minori di questo valore.
+
+### Numero periodi di storia
+E' un campo obbligatorio. Indica il numero di periodi, a partire dalla frontiera all'indietro, che vengono utilizzati per la determinazione dei parametri di calcolo del metodo. Non può quindi essere maggiore della frontiera, altrimenti provocherebbe uno sfondamento nel passato.
+### Esempio di impostazione periodi
+Con i seguenti valori : 
+* Frontiera = 35
+* N. Periodi di Storia = 24
+* N. Periodi di Previsione = 12
+Si ottiene la seguente griglia : 
+* Storia :  dal periodo 12 al 35 (estremi compresi)
+* Previsione :  dal periodo 36 al periodo 47 (estremi compresi)
+### Mantiene negativi
+Il calcolo può produrre valori di previsione negativi. Se impostato questo valore, essi, nella parte di previsione effettiva (oltre la frontiera) verranno mantenuti, se invece viene lasciato vuoto, verranno portati a zero. Nella parte storica (previsioni dall'inizio della storia alla frontiera) i negativi vengono sempre mantenuti, essendo valori utilizzati nel calcolo dello scostamento tra realtà e previsione, e quindi un loro azzeramento implicherebbe una riduzione arbitraria dello scostamento stesso.
+
+### N. Decimali di arrotondamento
+Se impostato un valore da 0 a 3, si esegue l'arrotondamento per il numero corrispondente di decimali. A differenza dell'azzeramento dei negativi, l'arrotondamento viene eseguito su tutta la previsione, sia effettiva sia storica.
 
 ## Previsioni con scelta metodo
 

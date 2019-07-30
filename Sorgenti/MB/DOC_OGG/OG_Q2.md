@@ -156,7 +156,7 @@ Le funzionalità dello schema possono essere applicate anche esternamente alla s
 
 Tali funzionalità si appoggiano alla /COPY £IQ2 ed alle istanze della classe Q2.
  :  : DEC T(MB) P(QILEGEN) K(£IQ2) L(1)
-- [CQ2 - Stato rilascio&-x2f;approvazione pr](Sorgenti/OG//Q2)
+ :  : DEC T(OG) P() K(Q2) L(1)
 
 # Utilizzo
 

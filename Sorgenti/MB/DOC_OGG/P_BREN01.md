@@ -26,7 +26,7 @@ In particolare, le opzioni disponibili sono :
 
 La scelta del codice ente potrà essere effettuata utilizzando i classici caratteri di ricerca. Per maggiori informazioni su questi caratteri si veda il seguente link : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_RIC) I(Ricerche speciali) L(1)
+- [Ricerche](Sorgenti/MB/DOC_OPE/B£_RIC)
 
 Dal formato guida è possibile accedere alle parzializzazioni tramite il tasto F13 o digitando il relativo bottone : 
 
@@ -39,7 +39,7 @@ Nel caso in cui venga spesso eseguito uno stesso filtro sui record del formato l
 
 Per maggiori dettagli sulle parzializzazioni e sulle memorizzazioni si rimanda alla seguente documentazione : 
 
- :  : DEC T(MB) P(DOC_OPE) K(B£_PAR)
+- [Parzializzazioni](Sorgenti/MB/DOC_OPE/B£_PAR)
 
 ## Formato dettaglio
 Il formato di dettaglio che si presenta è il seguente : 
