@@ -96,7 +96,7 @@ generaIndici()
 
 sidebar = os.path.abspath('Documentazione SmeUP/_sidebar.md')
 basepath = 'Sorgenti'
-with open(sidebar, "a+",  encoding='utf8') as f:
+with open(sidebar, "a+",  encoding='utf8') as f: # Trick per indicizzare tutti i doc senza visualizzarli nella sidebar
     f.write('- [](.)\n')
     f.write('<trick>\n')
     f.write('\n')
