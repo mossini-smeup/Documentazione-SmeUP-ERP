@@ -82,7 +82,7 @@ def organizzaFile():
 def generaIndici():
     basepath = './'
     pathGeneraIndice = os.path.abspath('generaIndici.py')
-    for dirname, dirnames, filenames in os.walk(basepath):
+    for dirname, dirnames, _ in os.walk(basepath):
         if 'immagini' in dirnames: 
             dirnames.remove('immagini') # Esclude la cartella dal controllo
         if '.git' in dirnames: 
