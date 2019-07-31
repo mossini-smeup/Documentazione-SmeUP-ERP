@@ -28,7 +28,7 @@
 - [LOOC.up - Arricchimento HTML](Sorgenti/MB/DOC_SER/JA_00_09.md)
 - [LOOC.up - Funzioni di Menù Bar](Sorgenti/MB/DOC_SER/JA_00_10.md)
 - [LOOC.up - Servizi di alias](Sorgenti/MB/DOC_SER/JA_00_11.md)
-- [](Sorgenti/MB/DOC_SER/JA_00_12.md)
+- [JA_00_12](Sorgenti/MB/DOC_SER/JA_00_12.md)
 - [LOOC.up - Accesso ai messaggi della sessione](Sorgenti/MB/DOC_SER/JA_00_13.md)
 - [LOOC.up - Funz. matematiche-statistiche](Sorgenti/MB/DOC_SER/JA_00_14.md)
 - [LOOC.up - open file ed esec. comandi](Sorgenti/MB/DOC_SER/JA_00_15.md)
