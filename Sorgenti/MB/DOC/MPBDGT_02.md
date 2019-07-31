@@ -32,16 +32,9 @@ I valori possono poi essere consolidati in un D5COSO, in questo caso tema e cont
 ## Campi considerati
 Nelle analisi budget <> consuntivi si considerano i campi seguenti che possono avere provenienze diverse : 
 
-|  Nam="Campi per analisi consuntivi" R="99" |
-| 
-| .COL Txt="C." LunAut=" " A="L" |
-| ---|----|
-| 
-| .COL Txt="Descrizione" LunAut=" " A="L" |
-| 
-| .COL Txt="Formula" LunAut=" " A="L" |
-| 
-| .COL Txt="Nota" LunAut="1" A="L" |
+
+| .COL Txt="C." LunAut=" " A="L" | .COL Txt="Descrizione" LunAut=" " A="L" | .COL Txt="Formula" LunAut=" " A="L" | .COL Txt="Nota" LunAut="1" A="L" |
+| ---|----| ---|----|
 |   01 | Qtà Budget | | È la quantità che viene letta nella vista piano del budget |
 |   02 | Importo totale Budget | | È l'importo corrispondente alla quantità del campo precedente, può essere letta da una vista piano oppure calcolata (es. valorizzando la qtà totale con un listino) |
 |   03 | Prezzo unitario Budget | | può essere calcolato come divisione dell'importo totale fratto la qtà totale oppure letto direttamente (es. da un listino) |
