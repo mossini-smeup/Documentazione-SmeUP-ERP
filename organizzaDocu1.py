@@ -27,6 +27,10 @@ def creaCartelle():
         os.mkdir('Documentazione SmeUP/DOC_OGG/Tabelle')
     if not os.path.exists('Documentazione SmeUP/DOC_OGG/Altro'):
         os.mkdir('Documentazione SmeUP/DOC_OGG/Altro')
+    if not os.path.exists('Documentazione SmeUP/NWS/News'):
+        os.mkdir('Documentazione SmeUP/NWS/News')
+    if not os.path.exists('Documentazione SmeUP/NWS/NTI'):
+        os.mkdir('Documentazione SmeUP/NWS/NTI')
     for i in range(len(areeApplicative)):
         for codice, nome in areeApp.items(): 
             if nome == nomiAreeApplicative[i]:
