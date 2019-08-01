@@ -74,7 +74,7 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                         output_file.write('  ' * iter_depth + '- [' + moduli[filename] + '](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/' + filename +')\n')
                 
                 else:
-                    if 'DOC_SCH' not in os.path.relpath(file_or_path) and 'DOC_OGG' not in os.path.relpath(file_or_path):
+                    if 'DOC_SCH' not in os.path.relpath(file_or_path) and 'DOC_OGG' not in os.path.relpath(file_or_path) and 'NWS' not in os.path.relpath(file_or_path):
                         output_file.write('  ' * iter_depth + '- [' + filename + '](' + os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20') + '/_sidebar.md)\n')
 
                 if oneLevelIndex == False:
@@ -361,6 +361,8 @@ def main():
             output.write('# Documentazione dei Servizi\n')
         elif directoryName == 'NWS':
             output.write('# News\n')
+            output.write('- [News](Documentazione%20SmeUP/NWS/News/_sidebar)\n')
+            output.write('- [Note Tecniche](Documentazione%20SmeUP/NWS/NTI/_sidebar)\n')
         # elif directoryName in applicazioni:
             # output.write('# ' + applicazioni[directoryName] + '\n')
         elif directoryName in areeApp:
