@@ -84,15 +84,8 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
             if is_markdown_file(filename): 
             # re to find target markdown files, $ for matching end of filename
                 if filename != '_sidebar.md':
-                    if (filename not in ['_sidebar.md', 
-                                        'SUMMARY-GitBook-auto-_sidebar.md'] 
-                        or iter_depth != 0): # escape _sidebar.md at base directory
-                        output_file.write('  ' * iter_depth + 
-                            '- [{}]({})\n'.format(write_md_filename(filename, 
-                                                                    append), 
-                                os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20')))
-
-
+                    if (filename not in ['_sidebar.md', 'SUMMARY-GitBook-auto-_sidebar.md'] or iter_depth != 0): # escape _sidebar.md at base directory
+                        output_file.write('  ' * iter_depth + '- [{}]({})\n'.format(write_md_filename(filename, append), os.path.relpath(file_or_path).replace('\\','/').replace(' ','%20')))
                         # iter depth for indent, relpath and join to write link.
                 else:
                     if 'DOC_APP' in os.path.relpath(file_or_path):
@@ -146,8 +139,7 @@ def output_markdown(dire, base_dir, output_file, append, oneLevelIndex, iter_dep
                                                     if areeApplicative[i][j] == singleFile[:2] and nomeFile in nomiDOC_SCH and len(nomeFile) == 6 and '_' not in nomeFile and applicazioneEsistente == False:
                                                         pathApplicazione = 'Documentazione SmeUP/DOC_SCH/Applicazioni/' + codice + '/' + areeApplicative[i][j] + '/_sidebar.md'
                                                         f.write('- [' + applicazioni[areeApplicative[i][j]] + '](' + pathApplicazione.replace(' ', '%20') + ')\n')
-                                                        applicazioneEsistente = True
-                                            
+                                                        applicazioneEsistente = True              
                         elif '\\Componenti\\_sidebar' in os.path.relpath(file_or_path): # Elenco dei DOC_SCH relativi ai Componenti
                             with open(os.path.relpath(file_or_path), 'w', encoding='utf8') as f:
                                 f.write('# Schede di Componenti\n')
