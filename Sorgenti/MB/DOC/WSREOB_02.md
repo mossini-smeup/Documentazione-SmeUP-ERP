@@ -10,7 +10,7 @@ Questo è un esempio per l'oggetto Provincia (TAV§P).
  :  : OAV Cod="U/01" Ind="\values(*)\(3)" Txt="Numero Abitanti" Ogg="NR" Len="9" Cnv="*ANGNUM"
 
  :  : SEZ Cod="OAV"
- :  : DAT Sub="GO.B01.001" Var="Via_e_civico() Città(&CO.CD%I/T$DESC) Nazione(Italia) API_KEY(AIzaSyAB2Fs7Zjv9d54KZljcohprucQLwufhknQ)"
+ :  : DAT Sub="GO.B01.001" Var="Via_e_civico() Città(&CO.CD%I/T$DESC) Nazione(Italia) API_KEY(xxxxxxxxxxxxxxxxxxxx)"
  :  : OAV Cod="U/02" Ind="\results(1)\geometry\location\lat" Txt="Latitudine" Ogg="" Cnv="*NUMTOTEXT" CnvVar="DECSEP(.) DECNUM(7)" IntVar="U02"
  :  : OAV Cod="U/03" Ind="\results(1)\geometry\location\lng" Txt="Longitudine" Ogg="" Cnv="*NUMTOTEXT" CnvVar="DECSEP(.) DECNUM(7)" IntVar="U03"
 
